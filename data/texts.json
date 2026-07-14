@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "tagline": "Sport på storbildsskärm. Kall öl. Thaimat. Allt under ett tak."
+  },
+  "intro": {
+    "title": "Något för alla. Kom som du är.",
+    "text": "Royal Thai SportsBar är Bromöllas mötesplats där matens smaker möter sportens energi. Se matchen på storbildsskärm, ta en kall öl, sjung karaoke eller utmana vännerna i biljard. Allt under ett tak."
+  },
+  "banner_sport": {
+    "title": "Kvällen börjar här",
+    "text": "Se matchen på våra storbildsskärmar med förstklassigt ljud och bildkvalitet. Premier League, SM och Champions League, mitt i Bromölla."
+  },
+  "feature_cta": {
+    "title": "Smaker som samlar Bromölla"
+  },
+  "om_oss_teaser": {
+    "title": "Kärlek till god mat och trevligt sällskap",
+    "text": "Hos oss är alla välkomna. En unik kombination av kryddstarka thailändska rätter och den härliga stämningen i en klassisk sportsbar, mitt i hjärtat av Bromölla."
+  },
+  "om_oss_page": {
+    "intro": "Royal Thai SportsBar föddes ur visionen att skapa en genuin mötesplats i Bromölla. Vi ville förena det bästa av två världar, de kryddstarka thailändska rätterna samt den härliga stämningen i en klassisk sportsbar.",
+    "heading": "Kärlek till god mat och trevligt sällskap",
+    "paragraph_1": "Hos oss är alla välkomna. Oavsett om du vill njuta av en het thailändsk middag med familjen, ta en kall pilsner efter jobbet med kollegorna eller heja fram ditt lag i helgen. Våra duktiga kockar garanterar förstklassiga smaker med färska ingredienser samt thailändsk expertis.",
+    "paragraph_2": "Vi tror på utmärkt service, generös gästfrihet samt hög kvalitet i allt vi serverar. Besök oss på Tunnbygatan 2 i Bromölla för en trevlig och minnesvärd upplevelse."
+  },
+  "events_page": {
+    "title": "Alltid något på gång",
+    "lead": "Sport, spel och fest under ett tak. Här är vad som väntar dig hos Royal Thai SportsBar."
+  },
+  "order_page": {
+    "title": "Maten hem till soffan",
+    "lead": "Vi samarbetar med ledande hemleveransföretag så att du får maten snabbt, varm och nylagad.",
+    "pickup_intro": "Ring in din beställning på",
+    "pickup_phone": "0456 226 89",
+    "pickup_address_intro": "och hämta den direkt hos oss på",
+    "pickup_address": "Tunnbygatan 2 i Bromölla"
+  },
+  "stats": {
+    "rating_value": "4.5",
+    "rating_label": "Betyg på Foodora",
+    "days_value": "6",
+    "days_label": "I veckan öppet",
+    "closing_value": "02:00",
+    "closing_label": "Öppet till på helgerna"
+  },
+  "kontakt": {
+    "adress": "Tunnbygatan 2, Bromölla",
+    "telefon_1": "0456 226 89",
+    "telefon_2": "076 169 78 85",
+    "epost": "royalthaisportsbar@gmail.com",
+    "footer_brand": "En förstklassig sportsbar och restaurang i hjärtat av Bromölla. Vi erbjuder en unik kombination av fantastiska asiatiska smaker samt klassisk barkultur."
+  }
+}

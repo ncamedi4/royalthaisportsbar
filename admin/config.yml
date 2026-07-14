@@ -27,6 +27,102 @@ logo_url: https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png
 
 collections:
 
+  # ============ TEXTER PA SAJTEN ============
+  - name: "texts"
+    label: "Texter"
+    description: "Redigera alla textblock pa sajten - hero, intro, om oss, kontakt osv. Andringar publiceras automatiskt inom en minut."
+    files:
+      - file: "data/texts.json"
+        name: "texts"
+        label: "Texter"
+        fields:
+          - name: hero
+            label: "Hero (startsida - text under loggan)"
+            widget: object
+            collapsed: false
+            fields:
+              - {name: tagline, label: "Tagline under loggan", widget: string, hint: "Kort mening som visas under Royal Thai-loggan"}
+
+          - name: intro
+            label: "Intro (startsida - forsta sektionen)"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: title, label: "Rubrik", widget: string}
+              - {name: text, label: "Brodtext", widget: text}
+
+          - name: banner_sport
+            label: "Sport-banner (mork sektion mitt pa startsidan)"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: title, label: "Rubrik", widget: string}
+              - {name: text, label: "Brodtext", widget: text}
+
+          - name: feature_cta
+            label: "Feature-CTA (stor bild med rubrik under)"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: title, label: "Rubrik", widget: string}
+
+          - name: om_oss_teaser
+            label: "Om oss-teaser (pa startsidan)"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: title, label: "Rubrik", widget: string}
+              - {name: text, label: "Brodtext", widget: text}
+
+          - name: om_oss_page
+            label: "Om oss-sidan"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: intro, label: "Intro-text (overst pa Om oss-sidan)", widget: text}
+              - {name: heading, label: "Rubrik under statistiken", widget: string}
+              - {name: paragraph_1, label: "Brodtext - stycke 1", widget: text}
+              - {name: paragraph_2, label: "Brodtext - stycke 2", widget: text}
+
+          - name: events_page
+            label: "Evenemang-sidan (topp)"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: title, label: "Rubrik", widget: string}
+              - {name: lead, label: "Under-rubrik", widget: text}
+
+          - name: order_page
+            label: "Bestall Online-sidan (topp)"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: title, label: "Rubrik", widget: string}
+              - {name: lead, label: "Under-rubrik", widget: text}
+
+          - name: stats
+            label: "Statistik-band pa Om oss (siffror)"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: rating_value, label: "Betyg (siffra)", widget: string, hint: "T.ex. '4.5' - visas som '4.5 av 5'"}
+              - {name: rating_label, label: "Betyg-etikett", widget: string}
+              - {name: days_value, label: "Antal dagar oppet (siffra)", widget: string}
+              - {name: days_label, label: "Dagar-etikett", widget: string}
+              - {name: closing_value, label: "Sena stangningstid", widget: string, hint: "T.ex. '02:00'"}
+              - {name: closing_label, label: "Sena stangning-etikett", widget: string}
+
+          - name: kontakt
+            label: "Kontakt & footer"
+            widget: object
+            collapsed: true
+            fields:
+              - {name: adress, label: "Adress", widget: string}
+              - {name: telefon_1, label: "Telefon 1", widget: string}
+              - {name: telefon_2, label: "Telefon 2", widget: string, required: false}
+              - {name: epost, label: "E-post", widget: string}
+              - {name: footer_brand, label: "Kort brand-text i footer", widget: text}
+
   # ============ EVENEMANG ============
   - name: "events"
     label: "Evenemang"
