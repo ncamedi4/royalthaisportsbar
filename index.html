@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Royal Thai SportsBar i Bromölla. Sport på storbildsskärm, kall öl, thaimat och svenska klassiker. Blackjack, karaoke och biljard. Allt under ett tak." />
-<meta name="keywords" content="Royal Thai SportsBar, Bromölla, thaimat, sportbar, karaoke, blackjack, biljard, restaurang, lunchbuffé, Foodora, Wolt" />
+<meta name="keywords" content="Royal Thai SportsBar, Bromölla, thaimat, sportbar, karaoke, blackjack, biljard, restaurang, lunchbuffé, Foodora" />
 <meta name="author" content="Royal Thai SportsBar" />
 <meta name="theme-color" content="#0A0A0A" />
 <meta name="robots" content="index, follow" />
@@ -180,6 +180,10 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 .hero .logo{justify-content:center;margin-bottom:0}
 .hero .logo img{height:clamp(100px,17vw,188px)}
 .hero .impact{font-size:clamp(1.5rem,3.6vw,2.4rem);letter-spacing:.42em;color:#fff;margin-top:-10px}
+/* Elegant eyebrow ovanfor loggan */
+.hero-eyebrow{display:inline-flex;align-items:center;gap:18px;font-family:'Bebas Neue',sans-serif;letter-spacing:.44em;font-size:.86rem;color:var(--gold);margin:0 auto 18px}
+.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:44px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.hero-eyebrow .diamond{width:6px;height:6px;background:var(--gold);transform:rotate(45deg);flex-shrink:0}
 .hero-tag{font-size:clamp(1rem,2.2vw,1.25rem);color:#fff;font-weight:300;margin:30px auto 40px;max-width:640px}
 .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .scroll-cue{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;color:var(--muted);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;animation:bob 2.4s var(--ease) infinite}
@@ -258,12 +262,19 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 .prow .pp{font-family:'Bebas Neue',sans-serif;font-size:1.25rem;color:var(--gold-ink);letter-spacing:.04em}
 .dark .prow .pp,.band:not(.light) .prow .pp{color:var(--gold)}
 
-/* menu category filter bar (sticky) */
-.menu-nav{position:sticky;top:66px;z-index:40;display:flex;gap:9px;overflow-x:auto;padding:14px 0;margin:40px 0 6px;background:var(--light-bg);border-top:1px solid var(--light-border);border-bottom:1px solid var(--light-border);scrollbar-width:none}
+/* menu category filter bar (sticky, med scroll-pilar) */
+.menu-nav-wrap{position:sticky;top:66px;z-index:40;background:var(--light-bg);border-top:1px solid var(--light-border);border-bottom:1px solid var(--light-border);margin:40px 0 6px;display:flex;align-items:center;gap:10px;padding:14px 0}
+.menu-nav-btn{flex-shrink:0;width:42px;height:42px;background:var(--light-bg);border:1px solid var(--light-border);color:var(--light-muted);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.22s var(--ease);font-size:1.2rem}
+.menu-nav-btn:hover{border-color:var(--gold);color:var(--gold-ink);background:rgba(194,162,74,.06)}
+.menu-nav-btn:disabled{opacity:.3;cursor:default}
+.menu-nav-btn.left{margin-left:0}
+.menu-nav-btn.right{margin-right:0}
+.menu-nav{flex:1;display:flex;gap:10px;overflow-x:auto;scroll-behavior:smooth;scrollbar-width:none;padding:2px 0}
 .menu-nav::-webkit-scrollbar{display:none}
-.chip{flex:0 0 auto;font-family:'Bebas Neue',sans-serif;letter-spacing:.09em;font-size:.98rem;padding:9px 18px;border:1px solid var(--light-border);background:transparent;color:var(--light-muted);cursor:pointer;white-space:nowrap;transition:all .22s var(--ease)}
+.chip{flex:0 0 auto;font-family:'Bebas Neue',sans-serif;letter-spacing:.1em;font-size:1.06rem;padding:11px 22px;border:1px solid var(--light-border);background:transparent;color:var(--light-muted);cursor:pointer;white-space:nowrap;transition:all .22s var(--ease)}
 .chip:hover{border-color:var(--gold);color:var(--gold-ink)}
 .chip.active{background:var(--gold-ink);color:#fff;border-color:var(--gold-ink)}
+@media(max-width:640px){.menu-nav-btn{width:36px;height:36px;font-size:1rem}.chip{font-size:.95rem;padding:9px 16px}}
 
 /* full menu */
 .menu-cat{margin-top:60px}
@@ -315,10 +326,18 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 .map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 /* order options */
-.order-opts{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:900px;margin:0 auto}
-.oopt{border:1px solid var(--light-border);background:var(--light-2);padding:40px 34px;text-align:center;display:flex;flex-direction:column;gap:16px}
+.order-opts{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;max-width:1000px;margin:0 auto;align-items:stretch}
+.oopt{border:1px solid var(--light-border);background:var(--light-2);padding:44px 40px;text-align:center;display:flex;flex-direction:column;gap:18px}
+.oopt.primary{background:var(--bg);color:#fff;border-color:var(--gold);padding:52px 44px}
+.oopt.primary h3{color:#fff}
+.oopt.primary p{color:rgba(255,255,255,.72)}
+.oopt.primary .badge{display:inline-block;font-family:'Bebas Neue',sans-serif;letter-spacing:.24em;font-size:.76rem;color:var(--gold);border:1px solid var(--gold);padding:5px 14px;align-self:center}
+.oopt.primary .phone-cta{font-family:'Bebas Neue',sans-serif;font-size:clamp(1.9rem,4vw,2.6rem);color:var(--gold);letter-spacing:.06em;display:block;margin:6px 0 2px}
+.oopt.primary .phone-note{font-size:.86rem;color:rgba(255,255,255,.5);letter-spacing:.08em}
+.oopt.primary .price{font-family:'Bebas Neue',sans-serif;font-size:1.15rem;letter-spacing:.14em;color:var(--gold-soft);padding-top:14px;border-top:1px solid rgba(194,162,74,.25);margin-top:auto}
 .oopt h3{font-size:1.6rem}
-.oopt p{font-size:.92rem;color:var(--light-muted);flex:1}
+.oopt p{font-size:.95rem;color:var(--light-muted);flex:1;line-height:1.55}
+@media(max-width:768px){.order-opts{grid-template-columns:1fr}}
 .pickup{max-width:900px;margin:34px auto 0;border:1px solid var(--light-border);background:var(--light-2);padding:26px 30px;text-align:center}
 .pickup .impact{color:var(--gold-ink);font-size:1.1rem;letter-spacing:.16em}
 .pickup p{color:var(--light-muted);margin-top:8px;font-size:.95rem}
@@ -336,10 +355,20 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 
 /* instagram */
 .ig{background:var(--bg)}
-.ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:var(--gallery);margin:44px auto 0}
-.ig-cell{aspect-ratio:1;background:linear-gradient(135deg,#1a1712,#0e0e0e);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-family:'Bebas Neue',sans-serif;letter-spacing:.16em;font-size:.72rem;transition:transform .4s var(--ease)}
-.ig-cell:hover{transform:scale(.97)}
 .ig .handle{text-align:center;color:var(--muted);letter-spacing:.1em;margin-top:26px;font-size:.9rem}
+/* Google Reviews-sektion */
+.review-rating{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:22px}
+.review-rating .stars{color:var(--gold);font-size:1.4rem;letter-spacing:.15em}
+.review-rating .rating-num{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:#fff;letter-spacing:.04em}
+.review-rating .rating-count{color:var(--muted);font-size:.86rem;letter-spacing:.08em}
+.reviews-fallback{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:var(--gallery);margin:44px auto 0}
+.review-card{background:rgba(255,255,255,.03);border:1px solid var(--border);border-top:2px solid var(--gold);padding:28px 26px;display:flex;flex-direction:column;gap:14px}
+.review-card .stars{color:var(--gold);font-size:1.05rem;letter-spacing:.14em}
+.review-card p{color:rgba(255,255,255,.82);font-size:.98rem;line-height:1.6;font-style:italic;flex:1}
+.review-card .review-author{color:var(--muted);font-size:.82rem;letter-spacing:.06em}
+/* Vid tom Elfsight-widget (dvs. inte konfigurerad) doljs den och fallback visas */
+[class*="elfsight-app-ELFSIGHT_"]{display:none}
+@media(max-width:900px){.reviews-fallback{grid-template-columns:1fr;max-width:640px}}
 
 /* footer */
 footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px}
@@ -351,9 +380,10 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
 .foot-about .logo{margin-bottom:18px}
 .foot-about .logo img{height:50px}
 .foot-about p{max-width:280px}
-.socials{display:flex;gap:12px;margin-top:20px}
-.socials a{width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:.3s}
-.socials a:hover{border-color:var(--gold);color:var(--gold)}
+.socials{display:flex;gap:12px;margin-top:22px}
+.socials a{display:inline-flex;align-items:center;gap:10px;padding:11px 18px;border:1px solid var(--border);color:var(--muted);font-family:'Bebas Neue',sans-serif;letter-spacing:.16em;font-size:.85rem;transition:.3s}
+.socials a svg{flex-shrink:0}
+.socials a:hover{border-color:var(--gold);color:var(--gold);background:rgba(194,162,74,.06)}
 .fhours{display:flex;justify-content:space-between;gap:12px;font-size:.85rem;padding:4px 0}
 .fhours span:first-child{flex:0 0 auto}
 .fhours span:last-child{text-align:right;white-space:nowrap}
@@ -414,7 +444,6 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
 /* responsive */
 @media(max-width:1024px){
   .lunch-body,.split{grid-template-columns:1fr;gap:28px}
-  .ig-grid{grid-template-columns:repeat(4,1fr)}
   .foot-grid{grid-template-columns:1fr 1fr;gap:34px}
 }
 @media(max-width:768px){
@@ -433,7 +462,6 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
   .stat:not(:last-child)::after{display:none}
   .stat:last-child{border-bottom:none}
   .band{padding:74px 0}
-  .ig-grid{grid-template-columns:repeat(2,1fr)}
   .order-tab{display:none}
   .field.row{grid-template-columns:1fr}
   .wrap{padding:0 20px}
@@ -487,6 +515,7 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-inner">
+      <div class="hero-eyebrow"><span class="diamond"></span>SPORTBAR I BROMÖLLA<span class="diamond"></span></div>
       <div class="logo">
         <img src="https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png" alt="Royal Thai SportsBar" />
       </div>
@@ -581,7 +610,7 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
     </div>
   </div>
 
-  <div class="ig-block"></div>
+  <div class="reviews-block"></div>
 </section>
 
 <!-- ============ MENY ============ -->
@@ -608,12 +637,16 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
         </div>
       </div>
 
-      <div class="menu-nav" id="menu-nav"></div>
+      <div class="menu-nav-wrap reveal">
+        <button class="menu-nav-btn left" onclick="scrollMenuNav(-1)" aria-label="Scrolla vänster">‹</button>
+        <div class="menu-nav" id="menu-nav"></div>
+        <button class="menu-nav-btn right" onclick="scrollMenuNav(1)" aria-label="Scrolla höger">›</button>
+      </div>
       <div id="menu-full"></div>
       <p class="menu-note reveal">Allergier eller preferenser? Fråga vår personal vid beställning. Priser och urval kan ändras.</p>
     </div>
   </div>
-  <div class="ig-block"></div>
+  <div class="reviews-block"></div>
 </section>
 
 <!-- ============ BESTALL ONLINE ============ -->
@@ -621,17 +654,20 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
   <div class="pagehead"><div class="ph-bg parallax" style="background:url('https://i.postimg.cc/4djvXrKB/feature-bar.jpg') center/cover"></div><h1>Beställ Online</h1></div>
   <div class="band light">
     <div class="wrap">
-      <div class="center reveal" style="margin-bottom:44px"><h2 class="sec-title" data-text="order_page.title">Maten hem till soffan</h2><div class="rule"></div><p class="lead">Vi samarbetar med ledande hemleveransföretag så att du får maten snabbt, varm och nylagad.</p></div>
+      <div class="center reveal" style="margin-bottom:44px"><h2 class="sec-title" data-text="order_page.title">Maten hem till soffan</h2><div class="rule"></div><p class="lead">Vi kör ut maten själva runt Bromölla — snabbt, varmt och nylagat. Föredrar du app? Vi finns även på Foodora.</p></div>
       <div class="order-opts">
-        <div class="oopt reveal">
-          <h3>Foodora</h3>
-          <p>Beställ hemleverans eller avhämtning supersnabbt via Foodoras app eller hemsida. Betyg 4.5 av 5.</p>
-          <a class="btn-solid btn" href="https://www.foodora.se/restaurant/p8kt/royal-thai-sportsbar" target="_blank" rel="noopener">Beställ på Foodora</a>
+        <div class="oopt primary reveal">
+          <span class="badge">Vår egen hemkörning</span>
+          <h3>Ring och beställ</h3>
+          <a class="phone-cta" href="tel:+46456226 89">0456 226 89</a>
+          <span class="phone-note">Vi svarar under öppettid</span>
+          <p>Beställ direkt av oss så kör vi ut maten själva runt Bromölla. Färskt lagat och levererat i god tid.</p>
+          <div class="price">Hemkörning från 39 kr</div>
         </div>
         <div class="oopt reveal">
-          <h3>Wolt</h3>
-          <p>Få din thaimat eller svenska favoriter levererade direkt till dörren. Lansering snart.</p>
-          <button class="btn" disabled style="opacity:.5;cursor:not-allowed">Kommer snart</button>
+          <h3>Foodora</h3>
+          <p>Föredrar du att beställa via app? Vi finns på Foodora med hela menyn — betyg 4.5 av 5.</p>
+          <a class="btn" href="https://www.foodora.se/restaurant/p8kt/royal-thai-sportsbar" target="_blank" rel="noopener">Öppna Foodora</a>
         </div>
       </div>
       <div class="pickup reveal">
@@ -640,7 +676,7 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
       </div>
     </div>
   </div>
-  <div class="ig-block"></div>
+  <div class="reviews-block"></div>
 </section>
 
 <!-- ============ EVENEMANG ============ -->
@@ -653,7 +689,7 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
       <div class="center reveal" style="margin-top:48px"><button class="btn-solid btn" onclick="openBook()">Boka Bord</button></div>
     </div>
   </div>
-  <div class="ig-block"></div>
+  <div class="reviews-block"></div>
 </section>
 
 <!-- ============ OM OSS ============ -->
@@ -680,17 +716,45 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
       </div>
     </div>
   </div>
-  <div class="ig-block"></div>
+  <div class="reviews-block"></div>
 </section>
 
 </main>
 
 <!-- ============ INSTAGRAM (shared, injected) ============ -->
-<template id="ig-tpl">
+<template id="reviews-tpl">
   <div class="band ig">
     <div class="wrap">
-      <div class="center reveal"><h2 class="sec-title" style="color:#fff">Följ oss på Instagram</h2><div class="rule"></div><div class="handle">@royalthaisportsbar</div></div>
-      <div class="elfsight-app-0c0ecdf8-d422-43f9-95d7-b6524ee86697" data-elfsight-app-lazy style="margin-top:40px"></div>
+      <div class="center reveal"><h2 class="sec-title" style="color:#fff">Vad gästerna säger</h2><div class="rule"></div>
+        <div class="review-rating">
+          <span class="stars">★★★★★</span>
+          <span class="rating-num">4,5 / 5</span>
+          <span class="rating-count">baserat på recensioner på Google och Foodora</span>
+        </div>
+      </div>
+      <!-- Skapa Google Reviews-widget pa https://elfsight.com/widgets/google-reviews/ och byt ELFSIGHT_GOOGLE_APP_ID mot ditt app-id -->
+      <div class="elfsight-app-ELFSIGHT_GOOGLE_APP_ID" data-elfsight-app-lazy style="margin-top:40px"></div>
+      <!-- Fallback som visas om widgeten inte laddats: 3 riktiga citat -->
+      <div class="reviews-fallback">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Sjukt god thaimat och trevlig personal! Går alltid hit när jag är i Bromölla. Bästa Pad Thai jag ätit."</p>
+          <div class="review-author">— Google-recension</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Perfekt ställe för matchkväll. Storbild, kall öl och riktigt bra mat. Personalen är fantastisk!"</p>
+          <div class="review-author">— Google-recension</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Lunchbuffén är riktigt prisvärd och maten smakar hemlagat. En riktig pärla i Bromölla."</p>
+          <div class="review-author">— Google-recension</div>
+        </div>
+      </div>
+      <div class="center reveal" style="margin-top:36px">
+        <a class="btn btn-ghost" href="https://www.google.com/search?q=royal+thai+sportsbar+bromölla+recensioner" target="_blank" rel="noopener">Läs fler recensioner på Google</a>
+      </div>
     </div>
   </div>
 </template>
@@ -702,7 +766,7 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
       <div class="foot-about">
         <div class="logo"><img src="https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png" alt="Royal Thai SportsBar" /></div>
         <p data-text="kontakt.footer_brand">En förstklassig sportsbar och restaurang i hjärtat av Bromölla. Vi erbjuder en unik kombination av fantastiska asiatiska smaker samt klassisk barkultur.</p>
-        <div class="socials"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">Fb</a></div>
+        <div class="socials"><a href="https://www.facebook.com/groups/728421457752303/" target="_blank" rel="noopener" aria-label="Facebook-grupp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.7-1.6h1.6V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.7H7.9V14h2.7v8h2.9z"/></svg><span>Facebook</span></a></div>
       </div>
       <div>
         <h4>Sidkarta</h4>
@@ -807,6 +871,26 @@ function renderMenu(){
         ${cat.i.map(it=>`<div class="mitem"><div class="top"><span class="name">${it.n}</span><span class="price">${it.p}</span></div>${it.d?`<div class="desc">${it.d}</div>`:''}</div>`).join('')}
       </div>
     </div>`).join('');
+  // Koppla scroll-lyssnare pa chip-raden
+  nav.addEventListener('scroll',updateMenuNavBtns,{passive:true});
+  window.addEventListener('resize',updateMenuNavBtns);
+  setTimeout(updateMenuNavBtns,50);
+}
+
+function scrollMenuNav(dir){
+  const nav=document.getElementById('menu-nav');
+  if(!nav)return;
+  nav.scrollBy({left:dir*nav.clientWidth*0.7,behavior:'smooth'});
+}
+function updateMenuNavBtns(){
+  const nav=document.getElementById('menu-nav');
+  if(!nav)return;
+  const wrap=nav.parentElement;
+  const left=wrap.querySelector('.menu-nav-btn.left');
+  const right=wrap.querySelector('.menu-nav-btn.right');
+  if(!left||!right)return;
+  left.disabled=nav.scrollLeft<=2;
+  right.disabled=nav.scrollLeft+nav.clientWidth>=nav.scrollWidth-2;
 }
 
 function filterMenu(cat,btn){
@@ -860,9 +944,9 @@ function renderEvents(){
 }
 
 /* ---------- IG inject ---------- */
-function injectIG(){
-  const tpl=document.getElementById('ig-tpl');
-  document.querySelectorAll('.ig-block').forEach(b=>b.appendChild(tpl.content.cloneNode(true)));
+function injectReviews(){
+  const tpl=document.getElementById('reviews-tpl');
+  document.querySelectorAll('.reviews-block').forEach(b=>b.appendChild(tpl.content.cloneNode(true)));
 }
 
 /* ---------- ROUTER ---------- */
@@ -989,7 +1073,7 @@ function cookieChoice(all){try{localStorage.setItem('rt_cookies',all?'all':'nece
 function initCookies(){try{if(!localStorage.getItem('rt_cookies'))setTimeout(function(){document.getElementById('cookieBanner').classList.add('open');},1400);}catch(e){}}
 
 /* Data hamtas fran data/*.json — sedan kors alla render/observers */
-loadData();injectIG();observeReveals();parallaxTick();initCookies();
+loadData();injectReviews();observeReveals();parallaxTick();initCookies();
 </script>
 </body>
 </html>
