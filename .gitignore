@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Backups
+*.bak
+index.html.bak
+
+# Node (om vi lägger till bygg senare)
+node_modules/
+
+# Netlify
+.netlify/

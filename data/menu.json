@@ -1,0 +1,152 @@
+{
+  "categories": [
+    {
+      "name": "Förrätter",
+      "items": [
+        { "n": "1. Kinesisk vårrulle", "p": "55 kr", "d": "Krispig aptitretare med kött och grönsaker." },
+        { "n": "2. Vårrulle Thai stil", "p": "55 kr", "d": "" },
+        { "n": "3. Vårrulle vegetarisk", "p": "55 kr", "d": "Krispigt inlindade grönsaker och kryddor." },
+        { "n": "4. Räkchips", "p": "40 kr", "d": "20 st." },
+        { "n": "5. Vitlöksbröd", "p": "40 kr", "d": "Krispigt bröd med vitlök och örter." },
+        { "n": "6. Kycklingsoppa", "p": "60 kr", "d": "Möra kycklingbitar och grönsaker." },
+        { "n": "8. Pekingsoppa", "p": "60 kr", "d": "" },
+        { "n": "9. Tom yam Gong soppa", "p": "60 kr", "d": "Het och syrlig med saftiga räkor." },
+        { "n": "Pommestallrik", "p": "45 kr", "d": "Friterade pommes frites." }
+      ]
+    },
+    {
+      "name": "Svenska Rätter",
+      "items": [
+        { "n": "102. Lövbiff", "p": "från 159 kr", "d": "Med pommes och kryddsmör." },
+        { "n": "103. Entrecote", "p": "från 199 kr", "d": "Med stekt potatis och bearnaisesås." },
+        { "n": "104. Fläskfilé", "p": "från 169 kr", "d": "Med stekt potatis och bearnaisesås." },
+        { "n": "105. Panerad Schnitzel", "p": "från 139 kr", "d": "Med stekt potatis och bearnaisesås." },
+        { "n": "109. Hamburgertallrik", "p": "från 129 kr", "d": "Med pommes, ägg och ost." }
+      ]
+    },
+    {
+      "name": "Biffrätter",
+      "items": [
+        { "n": "25. Biff med champinjoner och bambuskott", "p": "från 130 kr", "d": "" },
+        { "n": "26. Biff med blandade grönsaker", "p": "från 130 kr", "d": "" },
+        { "n": "27. Biff i curry", "p": "från 130 kr", "d": "Med blandade grönsaker." },
+        { "n": "29. Szechuan Biff", "p": "från 130 kr", "d": "Med blandade grönsaker." },
+        { "n": "32. Biff med lök", "p": "från 130 kr", "d": "Mört nötkött och saftig lök." }
+      ]
+    },
+    {
+      "name": "Kycklingrätter",
+      "items": [
+        { "n": "35. Kyckling med champinjoner och bambuskott", "p": "från 125 kr", "d": "" },
+        { "n": "37. Kyckling i curry med blandade grönsaker", "p": "från 125 kr", "d": "" },
+        { "n": "38. Kyckling med ananas", "p": "från 125 kr", "d": "" },
+        { "n": "39. Szechuan kyckling", "p": "från 125 kr", "d": "Med grönsaker." },
+        { "n": "41. Kyckling med cashewnötter och grönsaker", "p": "från 125 kr", "d": "" },
+        { "n": "42. Kyckling med räkor och cashewnötter", "p": "från 140 kr", "d": "Med grönsaker." },
+        { "n": "43. Kycklingspett", "p": "från 125 kr", "d": "Med jordnötssås." },
+        { "n": "44. Friterad Kyckling", "p": "från 125 kr", "d": "Med sötsur eller currysås." }
+      ]
+    },
+    {
+      "name": "Fläskrätter",
+      "items": [
+        { "n": "45. Fläsk med champinjoner och bambuskott", "p": "från 125 kr", "d": "" },
+        { "n": "50. Friterat fläsk med sötsur eller currysås", "p": "från 125 kr", "d": "" }
+      ]
+    },
+    {
+      "name": "Ankrätter",
+      "items": [
+        { "n": "52. Anka med ananas", "p": "från 179 kr", "d": "Med blandade grönsaker." },
+        { "n": "53. Szechuan Anka", "p": "från 179 kr", "d": "Med blandade grönsaker." },
+        { "n": "55. Friterad Anka", "p": "från 179 kr", "d": "Med blandade grönsaker." }
+      ]
+    },
+    {
+      "name": "Skaldjursrätter",
+      "items": [
+        { "n": "57. Räkor med vitlök", "p": "från 145 kr", "d": "Med blandade grönsaker." },
+        { "n": "58. Bläckfisk med vitlök", "p": "från 135 kr", "d": "Med blandade grönsaker." },
+        { "n": "59. Szechuan Jätteräkor", "p": "från 145 kr", "d": "Med blandade grönsaker." },
+        { "n": "61. Räkspett med jordnötssås", "p": "från 145 kr", "d": "Med blandade grönsaker." },
+        { "n": "63. Friterad bläckfisk", "p": "från 135 kr", "d": "Med sötsur eller currysås." },
+        { "n": "64. Friterade jätteräkor", "p": "från 145 kr", "d": "Med sötsur eller currysås." }
+      ]
+    },
+    {
+      "name": "Ris och Nudelrätter",
+      "items": [
+        { "n": "65. Stekt Ris de luxe", "p": "från 125 kr", "d": "Räkor, kyckling och grönsaker." },
+        { "n": "66. Stekt ris med kyckling", "p": "från 125 kr", "d": "Med blandade grönsaker." },
+        { "n": "67. Stekt ris med räkor", "p": "från 145 kr", "d": "Med blandade grönsaker." },
+        { "n": "68. Nasi Goreng", "p": "från 125 kr", "d": "Stekt ris, räkor, kyckling och curry." },
+        { "n": "69. Stekta Nudlar de luxe", "p": "från 125 kr", "d": "Räkor, kyckling och grönsaker." },
+        { "n": "70. Bami Goreng", "p": "från 125 kr", "d": "Stekta nudlar, räkor, kyckling och curry." },
+        { "n": "72. Pad Thai", "p": "från 145 kr", "d": "Risnudlar med kyckling och grönsaker." }
+      ]
+    },
+    {
+      "name": "Thairätter",
+      "items": [
+        { "n": "74. Biff med röd curry", "p": "från 135 kr", "d": "Med grönsaker." },
+        { "n": "75. Biff med grön curry", "p": "från 135 kr", "d": "Med grönsaker." },
+        { "n": "76. Biff med stark ostronsås", "p": "från 135 kr", "d": "Med grönsaker." },
+        { "n": "79. Biff med stark svartpepparsås", "p": "från 135 kr", "d": "Med grönsaker." },
+        { "n": "80. Biff med lök och stark ingefärssås", "p": "från 135 kr", "d": "Med grönsaker." },
+        { "n": "84. Kyckling med röd curry", "p": "från 130 kr", "d": "Med grönsaker." },
+        { "n": "86. Kyckling med stark ostronsås", "p": "från 130 kr", "d": "Med grönsaker." },
+        { "n": "90. Kyckling med lök och stark ingefärssås", "p": "från 130 kr", "d": "Med grönsaker." },
+        { "n": "92. Tom yam med kyckling, räkor och grönsaker", "p": "från 150 kr", "d": "" },
+        { "n": "94. Räkor med röd curry", "p": "från 155 kr", "d": "Med grönsaker." },
+        { "n": "97. Räkor med stark vitlökssås", "p": "från 155 kr", "d": "Med grönsaker." },
+        { "n": "99. Skaldjur de luxe med stark ostronsås", "p": "från 155 kr", "d": "Med grönsaker." },
+        { "n": "100. Tom yam skaldjur de luxe", "p": "från 155 kr", "d": "Med grönsaker." }
+      ]
+    },
+    {
+      "name": "Vegetariska rätter",
+      "items": [
+        { "n": "V1. Grönsaker med röd curry och tofu", "p": "från 125 kr", "d": "" },
+        { "n": "V2. Wokade äggnudlar", "p": "från 125 kr", "d": "Med grönsaker." },
+        { "n": "V3. Wokade risnudlar", "p": "från 125 kr", "d": "Med grönsaker." },
+        { "n": "V4. Wokat ris", "p": "från 125 kr", "d": "Med grönsaker." },
+        { "n": "V5. Wokade grönsaker med cashewnötter", "p": "från 125 kr", "d": "" }
+      ]
+    },
+    {
+      "name": "Barnmeny",
+      "items": [
+        { "n": "B2. Friterad kyckling", "p": "från 75 kr", "d": "Med pommes." },
+        { "n": "B3. Spaghetti", "p": "från 75 kr", "d": "Med köttfärssås." }
+      ]
+    },
+    {
+      "name": "Specialrätter",
+      "items": [
+        { "n": "M3. Tre små rätter", "p": "från 125 kr", "d": "Biff med stark ostronsås, kycklingspett, friterade räkor." },
+        { "n": "M4. Fyra små rätter", "p": "från 125 kr", "d": "Biff med bambuskott, kyckling i curry, friterat fläsk, friterade räkor." }
+      ]
+    },
+    {
+      "name": "Dessert",
+      "items": [
+        { "n": "111. Friterad banan med vaniljglass", "p": "50 kr", "d": "" }
+      ]
+    },
+    {
+      "name": "Dryck",
+      "items": [
+        { "n": "Coca-Cola Original 33 cl", "p": "20 kr", "d": "" },
+        { "n": "Coca-Cola Zero 33 cl", "p": "20 kr", "d": "" },
+        { "n": "Fanta Orange 33 cl", "p": "20 kr", "d": "" },
+        { "n": "Fanta Exotic 33 cl", "p": "20 kr", "d": "" },
+        { "n": "Sprite 33 cl", "p": "20 kr", "d": "" },
+        { "n": "Ramlösa naturell 33 cl", "p": "20 kr", "d": "" },
+        { "n": "Ramlösa citrus 33 cl", "p": "20 kr", "d": "" },
+        { "n": "Red Bull Original 250 ml", "p": "25 kr", "d": "" },
+        { "n": "Staropramen alkoholfri 33 cl", "p": "25 kr", "d": "" },
+        { "n": "Coca-Cola Original 1,5 liter", "p": "35 kr", "d": "" }
+      ]
+    }
+  ]
+}

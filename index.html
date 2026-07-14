@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Royal Thai SportsBar i Bromölla. Sport på storbildsskärm, kall öl, thaimat och svenska klassiker. Blackjack, karaoke och biljard. Allt under ett tak." />
+<meta name="keywords" content="Royal Thai SportsBar, Bromölla, thaimat, sportbar, karaoke, blackjack, biljard, restaurang, lunchbuffé, Foodora, Wolt" />
+<meta name="author" content="Royal Thai SportsBar" />
+<meta name="theme-color" content="#0A0A0A" />
+<meta name="robots" content="index, follow" />
+<title>Royal Thai SportsBar — Thailändsk Mat och Sport i Bromölla</title>
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant" />
+<meta property="og:site_name" content="Royal Thai SportsBar" />
+<meta property="og:title" content="Royal Thai SportsBar — Thailändsk Mat och Sport i Bromölla" />
+<meta property="og:description" content="Sport på storbildsskärm, kall öl, thaimat och svenska klassiker. Bromöllas mötesplats för mat, sport och gemenskap." />
+<meta property="og:image" content="https://i.postimg.cc/tT8d9L1D/hero.jpg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="720" />
+<meta property="og:locale" content="sv_SE" />
+<meta property="og:url" content="https://royalthaisportsbar.com/" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Royal Thai SportsBar — Bromölla" />
+<meta name="twitter:description" content="Sport på storbildsskärm, kall öl, thaimat och svenska klassiker." />
+<meta name="twitter:image" content="https://i.postimg.cc/tT8d9L1D/hero.jpg" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="https://i.postimg.cc/65SRdVj0/svart.png" />
+<link rel="apple-touch-icon" href="https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png" />
+
+<!-- Structured data (Restaurant) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Royal Thai SportsBar",
+  "image": "https://i.postimg.cc/tT8d9L1D/hero.jpg",
+  "logo": "https://i.postimg.cc/65SRdVj0/svart.png",
+  "url": "https://royalthaisportsbar.com/",
+  "telephone": "+46456226 89",
+  "email": "royalthaisportsbar@gmail.com",
+  "priceRange": "$$",
+  "servesCuisine": ["Thai", "Swedish", "Asian"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tunnbygatan 2",
+    "addressLocality": "Bromölla",
+    "postalCode": "295 31",
+    "addressCountry": "SE"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"16:00","closes":"22:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"11:30","closes":"22:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"11:30","closes":"02:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"11:30","closes":"02:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"02:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"22:00"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "94"
+  },
+  "hasMenu": "https://royalthaisportsbar.com/#meny",
+  "acceptsReservations": "True",
+  "sameAs": [
+    "https://www.foodora.se/restaurant/p8kt/royal-thai-sportsbar",
+    "https://www.instagram.com/royalthaisportsbar/"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<style>
+:root{
+  --bg:#0A0A0A; --dark2:#141414; --text:#FFFFFF; --muted:rgba(255,255,255,.55);
+  --gold:#C2A24A; --gold-soft:#D9BE73; --red:#C0392B; --border:rgba(255,255,255,.08);
+  --light-bg:#FFFFFF; --light-2:#F5F4F1; --light-text:#141414; --light-muted:#5A5A5A;
+  --gold-ink:#9A7B2E; --light-border:rgba(0,0,0,.10);
+  --maxw:1280px; --read:720px; --gallery:1400px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;border-radius:0!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Open Sans',sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.1;letter-spacing:.01em}
+.impact{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.03em;line-height:.95}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.read{max-width:var(--read);margin-left:auto;margin-right:auto}
+
+/* buttons */
+.btn{display:inline-block;font-family:'Open Sans',sans-serif;font-weight:500;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;padding:15px 34px;border:1px solid var(--gold);color:var(--gold);background:transparent;transition:all .35s var(--ease);cursor:pointer}
+.btn:hover{background:var(--gold);color:#0A0A0A}
+.btn-solid{background:var(--gold);color:#0A0A0A;border:1px solid var(--gold)}
+.btn-solid:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:#fff;color:#0A0A0A;border-color:#fff}
+
+/* logo */
+.logo{display:inline-flex;align-items:center;line-height:0}
+.logo img{height:44px;width:auto;display:block}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:60;background:linear-gradient(180deg,rgba(10,10,10,.96) 0%,rgba(10,10,10,.72) 70%,rgba(10,10,10,0) 100%);transition:background .4s}
+header.solid{background:rgba(10,10,10,.97);border-bottom:1px solid var(--border)}
+.nav-grid{max-width:1440px;margin:0 auto;padding:18px 34px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
+nav.main{display:flex;justify-content:center;gap:38px}
+nav.main a{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.82);padding:6px 0;position:relative;transition:color .3s}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:width .3s var(--ease)}
+nav.main a:hover,nav.main a.active{color:var(--gold)}
+nav.main a.active::after{width:100%}
+.nav-right{display:flex;justify-content:flex-end}
+.burger{display:none;flex-direction:column;gap:5px;padding:8px}
+.burger span{width:26px;height:2px;background:#fff;transition:.3s}
+nav.mobile{display:none}
+
+/* vertical order tab */
+.order-tab{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:55;background:var(--gold);color:#0A0A0A;writing-mode:vertical-rl;text-orientation:mixed;padding:22px 11px;font-family:'Bebas Neue',sans-serif;letter-spacing:.22em;font-size:.95rem;transition:background .3s;box-shadow:-4px 0 24px rgba(0,0,0,.4)}
+.order-tab:hover{background:var(--gold-soft)}
+
+/* sections */
+section.page{display:none}
+section.page.active{display:block;animation:pageIn .5s var(--ease)}
+@keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.band{padding:110px 0}
+.band.tight{padding:78px 0}
+.light{background:var(--light-bg);color:var(--light-text)}
+.light h1,.light h2,.light h3,.light h4{color:var(--light-text)}
+.light .muted{color:var(--light-muted)}
+.dark2{background:var(--dark2)}
+.muted{color:var(--muted)}
+
+.eyebrow{font-family:'Bebas Neue',sans-serif;letter-spacing:.34em;font-size:.95rem;color:var(--gold);margin-bottom:14px}
+.sec-title{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:10px}
+.rule{width:52px;height:2px;background:var(--gold);margin:22px auto 0}
+.center{text-align:center}
+.lead{font-size:1.22rem;line-height:1.7;color:var(--muted);max-width:680px;margin:22px auto 0}
+.light .lead{color:var(--light-muted)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:120px 20px 80px}
+.hero-bg{position:absolute;inset:0;z-index:0;
+  background:linear-gradient(180deg,rgba(10,10,10,.5) 0%,rgba(10,10,10,.4) 40%,rgba(10,10,10,.8) 100%),
+    url('https://i.postimg.cc/tT8d9L1D/hero.jpg') center/cover no-repeat;
+}
+.hero-bg::after{content:"";position:absolute;inset:0;opacity:.14;
+  background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:34px 34px;
+  mask-image:linear-gradient(180deg,transparent,#000 40%,#000 70%,transparent)}
+.hero-video{overflow:hidden;background:#0A0A0A}
+.hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,10,10,.55) 0%,rgba(10,10,10,.42) 42%,rgba(10,10,10,.82) 100%)}
+.hero-inner{position:relative;z-index:2;max-width:900px}
+.hero .logo{justify-content:center;margin-bottom:0}
+.hero .logo img{height:clamp(100px,17vw,188px)}
+.hero .impact{font-size:clamp(1.5rem,3.6vw,2.4rem);letter-spacing:.42em;color:#fff;margin-top:-10px}
+.hero-tag{font-size:clamp(1rem,2.2vw,1.25rem);color:#fff;font-weight:300;margin:30px auto 40px;max-width:640px}
+.hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.scroll-cue{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;color:var(--muted);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;animation:bob 2.4s var(--ease) infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,7px)}}
+
+/* --- inlevelse (diskret & elegant) --- */
+/* 1. hero staggered entrance */
+.hero-inner > *{opacity:0;animation:heroIn 1s var(--ease) forwards}
+.hero .logo{animation-delay:.15s}
+.hero .impact{animation-delay:.42s}
+.hero-tag{animation-delay:.62s}
+.hero-cta{animation-delay:.82s}
+@keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+/* 4. card hover */
+.card{overflow:hidden;transition:transform .55s var(--ease)}
+.card:hover{transform:translateY(-6px)}
+.card .ph-img.photo{transition:transform .9s var(--ease)}
+.card:hover .ph-img.photo{transform:scale(1.05)}
+/* 5. parallax layers */
+.parallax{top:-12%!important;bottom:auto!important;height:124%!important;will-change:transform}
+/* 9. open-now badge */
+.brand-wrap{display:flex;align-items:center;gap:16px}
+.open-badge{display:inline-flex;align-items:center;gap:7px;font-family:'Bebas Neue',sans-serif;letter-spacing:.12em;font-size:.74rem;color:rgba(255,255,255,.72);white-space:nowrap}
+.open-badge .dot{width:8px;height:8px;border-radius:50%!important;background:#3fbf6a;animation:pulse 2.6s infinite}
+.open-badge.closed{color:rgba(255,255,255,.5)}
+.open-badge.closed .dot{background:var(--red);animation:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,191,106,.45)}70%{box-shadow:0 0 0 7px rgba(63,191,106,0)}100%{box-shadow:0 0 0 0 rgba(63,191,106,0)}}
+@media(prefers-reduced-motion:reduce){.hero-inner>*{animation:none;opacity:1}.card .ph-img.photo,.parallax,.card{transition:none}.card:hover{transform:none}.card:hover .ph-img.photo{transform:none}.open-badge .dot{animation:none}}
+
+/* full-bleed banner */
+.banner{position:relative;min-height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 24px;overflow:hidden;background:#0A0A0A}
+.banner .bnr-bg{position:absolute;inset:0;z-index:0;opacity:.9}
+.banner .bnr-bg.b1{background:linear-gradient(135deg,#161310 0%,#0A0A0A 50%,#14100a 100%),radial-gradient(80% 120% at 20% 10%,rgba(194,162,74,.14),transparent)}
+.banner .bnr-bg.b2{background:linear-gradient(135deg,#12100c 0%,#0A0A0A 55%,#1a0f0d 100%),radial-gradient(70% 90% at 80% 20%,rgba(192,57,43,.16),transparent)}
+.banner::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.7))}
+.banner .b-inner{position:relative;z-index:2;max-width:760px}
+.banner h2{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(2.6rem,7vw,5rem);letter-spacing:.04em;color:#fff}
+.banner p{color:rgba(255,255,255,.8);font-size:1.2rem;line-height:1.65;margin:20px auto 34px;max-width:620px}
+
+/* page header banner (subpages) */
+.pagehead{position:relative;min-height:42vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:150px 20px 70px;overflow:hidden}
+.pagehead .ph-bg{position:absolute;inset:0;z-index:0}
+.pagehead::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,10,10,.7),rgba(10,10,10,.82))}
+.pagehead h1{position:relative;z-index:2;font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(2.8rem,8vw,5.5rem);letter-spacing:.06em;color:#fff}
+.ph-thai{background:linear-gradient(120deg,#1a1510,#0A0A0A 60%),radial-gradient(60% 100% at 30% 0,rgba(194,162,74,.18),transparent)}
+.ph-order{background:linear-gradient(120deg,#14110c,#0A0A0A 60%),radial-gradient(60% 100% at 70% 0,rgba(194,162,74,.16),transparent)}
+.ph-events{background:linear-gradient(120deg,#160f0e,#0A0A0A 60%),radial-gradient(60% 100% at 50% 0,rgba(192,57,43,.2),transparent)}
+.ph-about{background:linear-gradient(120deg,#15120d,#0A0A0A 60%),radial-gradient(60% 100% at 40% 0,rgba(194,162,74,.15),transparent)}
+
+/* photo placeholder */
+.ph-img{position:relative;background:linear-gradient(135deg,#1c1a15,#111);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;aspect-ratio:4/3}
+.ph-img::after{content:attr(data-label);font-family:'Bebas Neue',sans-serif;letter-spacing:.2em;font-size:.8rem;color:rgba(255,255,255,.32);padding:0 14px;text-align:center}
+.light .ph-img{background:linear-gradient(135deg,#ece9e2,#dcd8cf);border-color:var(--light-border)}
+.light .ph-img::after{color:rgba(0,0,0,.3)}
+.ph-img.photo{background-size:cover;background-position:center;border-color:var(--border)}
+.ph-img.photo::after{content:none}
+
+/* contrast cards (menu teaser / events) */
+.cards{display:grid;gap:44px;margin-top:56px}
+.cards.two{grid-template-columns:repeat(2,1fr)}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.card .ph-img{aspect-ratio:16/11;margin-bottom:22px}
+.card h3{font-size:1.4rem;margin-bottom:8px}
+.card p{font-size:1.04rem;line-height:1.65}
+.card.feat h3{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.07em;text-transform:uppercase;font-size:1.6rem;color:var(--light-text)}
+.card.feat .rolelbl{font-family:'Bebas Neue',sans-serif;letter-spacing:.2em;font-size:.78rem;color:var(--gold-ink);display:block;margin-bottom:6px}
+
+/* big feature photo band (reference: large centered photo) */
+.feature-photo{max-width:1080px;margin:0 auto;aspect-ratio:16/8}
+.feat-cta{max-width:640px;margin:34px auto 0;text-align:center}
+.feat-cta h2{font-size:clamp(1.7rem,3.6vw,2.6rem);margin-bottom:14px}
+
+/* mini price list */
+.pricelist{margin:48px auto 0;max-width:760px;border-top:1px solid var(--light-border)}
+.light .prow{border-bottom:1px solid var(--light-border)}
+.prow{display:flex;align-items:baseline;gap:16px;padding:16px 4px;border-bottom:1px solid var(--border)}
+.prow .pn{font-family:'Poppins',sans-serif;font-weight:600;font-size:1.05rem}
+.prow .pd{flex:1;height:1px;background:currentColor;opacity:.15;transform:translateY(-4px)}
+.prow .pp{font-family:'Bebas Neue',sans-serif;font-size:1.25rem;color:var(--gold-ink);letter-spacing:.04em}
+.dark .prow .pp,.band:not(.light) .prow .pp{color:var(--gold)}
+
+/* menu category filter bar (sticky) */
+.menu-nav{position:sticky;top:66px;z-index:40;display:flex;gap:9px;overflow-x:auto;padding:14px 0;margin:40px 0 6px;background:var(--light-bg);border-top:1px solid var(--light-border);border-bottom:1px solid var(--light-border);scrollbar-width:none}
+.menu-nav::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;font-family:'Bebas Neue',sans-serif;letter-spacing:.09em;font-size:.98rem;padding:9px 18px;border:1px solid var(--light-border);background:transparent;color:var(--light-muted);cursor:pointer;white-space:nowrap;transition:all .22s var(--ease)}
+.chip:hover{border-color:var(--gold);color:var(--gold-ink)}
+.chip.active{background:var(--gold-ink);color:#fff;border-color:var(--gold-ink)}
+
+/* full menu */
+.menu-cat{margin-top:60px}
+.menu-cat h2{font-size:1.7rem;color:var(--gold-ink);margin-bottom:6px}
+.light .menu-cat h2{color:var(--gold-ink)}
+.menu-cat .cat-rule{width:100%;height:1px;background:var(--light-border);margin-bottom:8px}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 60px}
+.mitem{padding:18px 0;border-bottom:1px solid var(--light-border)}
+.mitem .top{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.mitem .name{font-family:'Poppins',sans-serif;font-weight:600;font-size:1.06rem;color:var(--light-text)}
+.mitem .price{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;color:var(--gold-ink);white-space:nowrap;letter-spacing:.03em}
+.mitem .desc{font-size:.86rem;color:var(--light-muted);margin-top:5px;max-width:44ch}
+.menu-note{margin-top:40px;font-size:.85rem;color:var(--light-muted);text-align:center;font-style:italic}
+
+/* lunch feature */
+.lunch{background:var(--light-2);border:1px solid var(--light-border);padding:44px;margin-bottom:20px}
+.lunch .lhead{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px;border-bottom:1px solid var(--light-border);padding-bottom:16px;margin-bottom:22px}
+.lunch .lhead .impact{font-size:1.8rem;color:var(--gold-ink)}
+.lunch .lhead .price{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold-ink)}
+.lunch-body{display:grid;grid-template-columns:1.3fr 1fr;gap:36px}
+.lunch ul{list-style:none;display:grid;gap:9px}
+.lunch li{padding-left:20px;position:relative;font-size:.92rem;color:var(--light-muted)}
+.lunch li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:var(--gold)}
+.lunch .when{font-family:'Bebas Neue',sans-serif;letter-spacing:.1em;color:var(--gold-ink);margin-top:20px}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border:none;overflow:hidden;position:relative}
+.stats::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 140% at 50% 0,rgba(194,162,74,.14),transparent 60%);pointer-events:none}
+.stat{padding:66px 24px 58px;text-align:center;position:relative}
+.stat:not(:last-child)::after{content:"";position:absolute;right:0;top:26%;height:48%;width:1px;background:var(--border)}
+.stat .big{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.6rem,8vw,6.2rem);color:var(--gold);line-height:.88;letter-spacing:.01em;display:inline-block}
+.stat .lbl{font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:16px}
+
+/* info split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.info-cards{display:grid;gap:18px;margin-top:8px}
+.info-card{border:1px solid var(--light-border);padding:8px 32px;background:var(--light-2)}
+.info-row{display:flex;flex-direction:column;gap:6px;padding:22px 0}
+.info-row + .info-row{border-top:1px solid var(--light-border)}
+.info-card .ic-lbl{font-family:'Bebas Neue',sans-serif;letter-spacing:.18em;color:var(--gold-ink);font-size:.98rem}
+.info-card .ic-val{font-size:1.2rem;color:var(--light-text);line-height:1.4}
+/* enhetlig panel-look pa alla boxar */
+.info-card,.oopt,.pickup,.lunch{border-top:2px solid var(--gold);box-shadow:0 10px 34px rgba(0,0,0,.05)}
+.hours-list{display:grid;gap:0}
+.hrow{display:flex;justify-content:space-between;padding:11px 2px;border-bottom:1px solid var(--light-border);font-size:.92rem}
+.hrow.today{color:var(--gold-ink);font-weight:600}
+.hrow .d{letter-spacing:.06em;text-transform:uppercase;font-size:.82rem}
+.map-embed{position:relative;aspect-ratio:16/10;border:1px solid var(--light-border);overflow:hidden}
+.map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* order options */
+.order-opts{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:900px;margin:0 auto}
+.oopt{border:1px solid var(--light-border);background:var(--light-2);padding:40px 34px;text-align:center;display:flex;flex-direction:column;gap:16px}
+.oopt h3{font-size:1.6rem}
+.oopt p{font-size:.92rem;color:var(--light-muted);flex:1}
+.pickup{max-width:900px;margin:34px auto 0;border:1px solid var(--light-border);background:var(--light-2);padding:26px 30px;text-align:center}
+.pickup .impact{color:var(--gold-ink);font-size:1.1rem;letter-spacing:.16em}
+.pickup p{color:var(--light-muted);margin-top:8px;font-size:.95rem}
+.pickup strong{color:var(--light-text)}
+
+/* events */
+.ev-list{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:50px}
+.ev{border:1px solid var(--light-border);background:var(--light-2);overflow:hidden;transition:transform .4s var(--ease),border-color .4s var(--ease),box-shadow .4s var(--ease)}
+.ev:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.ev .ph-img{aspect-ratio:16/9}
+.ev .ph-img.photo{transition:transform .8s var(--ease)}
+.ev:hover .ph-img.photo{transform:scale(1.04)}
+.ev-body{padding:30px 38px 34px}
+.ev .impact{font-size:1.75rem;color:var(--light-text);display:block}
+.ev .when{display:inline-flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;letter-spacing:.14em;font-size:.9rem;color:var(--gold-ink);margin:12px 0 16px}
+.ev .when::before{content:"";width:18px;height:2px;background:var(--gold);flex:0 0 auto}
+.ev p{font-size:1.02rem;color:var(--light-muted);line-height:1.6}
+
+/* instagram */
+.ig{background:var(--bg)}
+.ig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:var(--gallery);margin:44px auto 0}
+.ig-cell{aspect-ratio:1;background:linear-gradient(135deg,#1a1712,#0e0e0e);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.25);font-family:'Bebas Neue',sans-serif;letter-spacing:.16em;font-size:.72rem;transition:transform .4s var(--ease)}
+.ig-cell:hover{transform:scale(.97)}
+.ig .handle{text-align:center;color:var(--muted);letter-spacing:.1em;margin-top:26px;font-size:.9rem}
+
+/* footer */
+footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px}
+.foot-grid h4{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.2em;font-size:1rem;color:#fff;margin-bottom:20px}
+.foot-grid a,.foot-grid p,.foot-grid li{color:var(--muted);font-size:.9rem;line-height:2}
+.foot-grid ul{list-style:none}
+.foot-grid nav a:hover{color:var(--gold)}
+.foot-about .logo{margin-bottom:18px}
+.foot-about .logo img{height:50px}
+.foot-about p{max-width:280px}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:.3s}
+.socials a:hover{border-color:var(--gold);color:var(--gold)}
+.fhours{display:flex;justify-content:space-between;gap:12px;font-size:.85rem;padding:4px 0}
+.fhours span:first-child{flex:0 0 auto}
+.fhours span:last-child{text-align:right;white-space:nowrap}
+.fhours.today span{color:var(--gold)}
+.foot-bottom{max-width:var(--maxw);margin:50px auto 0;padding:24px 28px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.75rem;letter-spacing:.08em;color:rgba(255,255,255,.4);text-transform:uppercase}
+.foot-bottom a:hover{color:var(--gold)}
+
+/* cookie banner */
+.cookie{position:fixed;left:20px;right:20px;bottom:20px;z-index:90;background:var(--dark2);border:1px solid var(--border);border-top:2px solid var(--gold);padding:20px 26px;display:none;grid-template-columns:1fr auto;gap:20px;align-items:center;max-width:820px;margin:0 auto;box-shadow:0 20px 60px rgba(0,0,0,.5);transform:translateY(20px);opacity:0;transition:transform .5s var(--ease),opacity .5s var(--ease)}
+.cookie.open{display:grid;transform:none;opacity:1}
+.cookie p{color:rgba(255,255,255,.78);font-size:.92rem;line-height:1.55;margin:0}
+.cookie a{color:var(--gold);text-decoration:underline}
+.cookie-actions{display:flex;gap:10px;flex-shrink:0}
+@media(max-width:640px){.cookie{grid-template-columns:1fr;bottom:12px;left:12px;right:12px;padding:18px 20px}.cookie-actions .btn{padding:11px 22px;font-size:.72rem}}
+
+/* modal */
+.modal-ov{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.8);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:24px}
+.modal-ov.open{display:flex;animation:fade .3s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.modal{background:var(--dark2);border:1px solid var(--border);max-width:520px;width:100%;padding:44px;position:relative;max-height:92vh;overflow:auto}
+.modal h3{font-size:1.7rem;margin-bottom:6px}
+.modal .sub{color:var(--muted);font-size:.92rem;margin-bottom:26px}
+.modal .close{position:absolute;top:18px;right:20px;font-size:1.6rem;color:var(--muted);line-height:1}
+.modal .close:hover{color:var(--gold)}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;background:#0d0d0d;border:1px solid var(--border);color:#fff;padding:12px 14px;font-family:inherit;font-size:.95rem;transition:border .3s;resize:vertical}
+.field input:invalid:not(:placeholder-shown),.field textarea:invalid:not(:placeholder-shown){border-color:var(--red)}
+.formstate{margin-top:14px;padding:14px 16px;font-size:.9rem;display:none}
+.formstate.ok{display:block;background:rgba(63,191,106,.12);border:1px solid rgba(63,191,106,.35);color:#8de5a8}
+.formstate.err{display:block;background:rgba(192,57,43,.14);border:1px solid rgba(192,57,43,.4);color:#e88a80}
+.field input:focus,.field select:focus{outline:none;border-color:var(--gold)}
+.field.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.modal .btn-solid{width:100%;margin-top:10px;justify-content:center;text-align:center}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:1024px){
+  .lunch-body,.split{grid-template-columns:1fr;gap:28px}
+  .ig-grid{grid-template-columns:repeat(4,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:34px}
+}
+@media(max-width:768px){
+  nav.main,.nav-right .btn,.open-badge{display:none}
+  .burger{display:flex}
+  .nav-grid{grid-template-columns:auto 1fr;padding:14px 20px}
+  .nav-right{display:flex}
+  nav.mobile{position:fixed;inset:0;background:rgba(8,8,8,.98);z-index:70;flex-direction:column;align-items:center;justify-content:center;gap:26px;display:none}
+  nav.mobile.open{display:flex}
+  nav.mobile a{font-size:1.3rem;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+  nav.mobile a.active{color:var(--gold)}
+  nav.mobile .btn{margin-top:14px}
+  nav.mobile .mclose{position:absolute;top:22px;right:24px;font-size:2rem;color:var(--muted)}
+  .cards.two,.cards.three,.menu-grid,.order-opts,.ev-list,.stats,.foot-grid{grid-template-columns:1fr}
+  .stat{border-bottom:1px solid var(--border);padding:44px 24px}
+  .stat:not(:last-child)::after{display:none}
+  .stat:last-child{border-bottom:none}
+  .band{padding:74px 0}
+  .ig-grid{grid-template-columns:repeat(2,1fr)}
+  .order-tab{display:none}
+  .field.row{grid-template-columns:1fr}
+  .wrap{padding:0 20px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="hdr">
+  <div class="nav-grid">
+    <div class="brand-wrap">
+      <a href="#" class="logo" data-nav="home" aria-label="Royal Thai SportsBar">
+        <img src="https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png" alt="Royal Thai SportsBar" />
+      </a>
+      <span class="open-badge" id="openBadge"></span>
+    </div>
+    <nav class="main">
+      <a data-nav="meny">Meny</a>
+      <a data-nav="order">Beställ Online</a>
+      <a data-nav="events">Evenemang</a>
+      <a data-nav="about">Om oss</a>
+    </nav>
+    <div class="nav-right">
+      <button class="btn" onclick="openBook()">Boka Bord</button>
+      <button class="burger" onclick="toggleMobile()" aria-label="Meny"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile" id="mnav">
+  <button class="mclose" onclick="toggleMobile()" aria-label="Stäng">&times;</button>
+  <a data-nav="meny">Meny</a>
+  <a data-nav="order">Beställ Online</a>
+  <a data-nav="events">Evenemang</a>
+  <a data-nav="about">Om oss</a>
+  <button class="btn" onclick="closeMobile();openBook()">Boka Bord</button>
+</nav>
+
+<a class="order-tab" data-nav="order">Beställ Online</a>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<section class="page active" data-page="home">
+  <div class="hero">
+    <div class="hero-bg hero-video">
+      <video autoplay muted loop playsinline preload="auto" poster="assets/wok-poster.jpg">
+        <source src="https://firebasestorage.googleapis.com/v0/b/studio-7709662742-59a36.firebasestorage.app/o/Firefly%20Cinematic%20slow-motion%20close-up%20of%20a%20chef%20tossing%20fried%20rice%20and%20vegetables%20in%20a_black%20wok%20ov.mp4?alt=media&token=f30f1e6b-e363-4cf2-a0ac-4588adb82e7c" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="logo">
+        <img src="https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png" alt="Royal Thai SportsBar" />
+      </div>
+      <div class="impact">Sportsbar</div>
+      <p class="hero-tag">Sport på storbildsskärm. Kall öl. Thaimat. Allt under ett tak.</p>
+      <div class="hero-cta">
+        <button class="btn-solid btn" data-nav="meny">Se Menyn</button>
+        <button class="btn btn-ghost" onclick="openBook()">Boka Bord</button>
+      </div>
+    </div>
+    <div class="scroll-cue">Scrolla</div>
+  </div>
+
+  <!-- intro + upplev mer (light) -->
+  <div class="band light">
+    <div class="wrap">
+      <div class="read center reveal" style="margin:0 auto">
+        <h2 class="sec-title">Något för alla. Kom som du är.</h2>
+        <div class="rule"></div>
+        <p class="lead">Royal Thai SportsBar är Bromöllas mötesplats där matens smaker möter sportens energi. Se matchen på storbildsskärm, ta en kall öl, sjung karaoke eller utmana vännerna i biljard. Allt under ett tak.</p>
+      </div>
+      <div class="cards three" style="margin-top:56px">
+        <div class="card feat reveal">
+          <div class="ph-img photo" style="background:url('assets/wok.jpg') center/cover"></div>
+          <h3>Autentisk Thai</h3>
+          <p class="muted">Kryddstarkt, friskt och lagat med passion efter thailändska recept. Currys, woks och klassiska nummer från menyn.</p>
+        </div>
+        <div class="card feat reveal">
+          <div class="ph-img photo" style="background:url('https://i.postimg.cc/K851wT7r/Chat-GPT-Image-13-juli-2026-15-58-13-(4).png') center/cover"></div>
+          <h3>Svenska Klassiker</h3>
+          <p class="muted">Lövbiff, schnitzel och hamburgertallrik lagade så som du vill ha dem. Trygg husmanskost mitt i sportbaren.</p>
+        </div>
+        <div class="card feat reveal">
+          <div class="ph-img photo" style="background:url('https://i.postimg.cc/tT8d9L1D/hero.jpg') center/cover"></div>
+          <h3>Sport och Bar</h3>
+          <p class="muted">Kall öl, sport på storbild och en levande atmosfär. Den perfekta ramen kring maten, alla dagar i veckan.</p>
+        </div>
+      </div>
+      <div class="center reveal" style="margin-top:44px"><button class="btn" data-nav="meny">Se hela menyn</button></div>
+    </div>
+  </div>
+
+  <!-- kvällen börjar här (dark) -->
+  <div class="banner">
+    <div class="bnr-bg parallax" style="background:url('https://i.postimg.cc/tT8d9L1D/hero.jpg') center/cover"></div>
+    <div class="b-inner reveal">
+      <h2>Kvällen börjar här</h2>
+      <p>Se matchen på våra storbildsskärmar med förstklassigt ljud och bildkvalitet. Premier League, SM och Champions League, mitt i Bromölla.</p>
+      <button class="btn btn-ghost" data-nav="events">Se Evenemang</button>
+    </div>
+  </div>
+
+  <!-- evenemang-teaser (light) -->
+  <div class="band light">
+    <div class="wrap">
+      <div class="center reveal"><h2 class="sec-title">Upplev mer</h2><div class="rule"></div></div>
+      <div class="cards three" id="events-home"></div>
+      <div class="center reveal" style="margin-top:52px"><button class="btn" data-nav="events">Fler evenemang</button></div>
+    </div>
+  </div>
+
+
+  <!-- stor feature-bild (referens: stor centrerad bild) -->
+  <div class="band tight light">
+    <div class="wrap">
+      <div class="feature-photo ph-img photo reveal" style="background:url('https://i.postimg.cc/4djvXrKB/feature-bar.jpg') center/cover"></div>
+      <div class="feat-cta reveal">
+        <h2>Smaker som samlar Bromölla</h2>
+        <button class="btn" onclick="openBook()">Boka Bord</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- om oss teaser (light) -->
+  <div class="band tight light dark-alt" style="background:var(--light-2)">
+    <div class="wrap read center reveal">
+      <h2 class="sec-title">Kärlek till god mat och trevligt sällskap</h2>
+      <p class="lead">Hos oss är alla välkomna. En unik kombination av kryddstarka thailändska rätter och den hårliga stämningen i en klassisk sportsbar, mitt i hjärtat av Bromölla.</p>
+      <div style="margin-top:30px"><button class="btn" data-nav="about">Las mer om oss</button></div>
+    </div>
+  </div>
+
+  <!-- hitta hit + öppettider (light) -->
+  <div class="band light">
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <h2 class="sec-title" style="font-size:2rem">Besök oss på Tunnbygatan</h2>
+          <div class="map-embed" style="margin:24px 0">
+            <iframe src="https://maps.google.com/maps?q=Tunnbygatan%202,%20Brom%C3%B6lla&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Karta Royal Thai SportsBar"></iframe>
+          </div>
+          <div class="info-card">
+            <div class="info-row"><span class="ic-lbl">Adress</span><span class="ic-val">Tunnbygatan 2, Bromölla</span></div>
+            <div class="info-row"><span class="ic-lbl">Telefon</span><span class="ic-val">0456 226 89 · 076 169 78 85</span></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h2 class="sec-title" style="font-size:2rem">Öppettider</h2>
+          <div class="hours-list" id="hours-home" style="margin-top:24px"></div>
+          <div style="margin-top:26px"><button class="btn-solid btn" onclick="openBook()">Boka Bord Nu</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ig-block"></div>
+</section>
+
+<!-- ============ MENY ============ -->
+<section class="page" data-page="meny">
+  <div class="pagehead"><div class="ph-bg parallax" style="background:url('assets/wok.jpg') center/cover"></div><h1>Vår Meny</h1></div>
+  <div class="band light">
+    <div class="wrap">
+      <p class="lead center reveal" style="margin-bottom:8px">Njut av våra omsorgsfullt lagade thailändska specialiteter, klassiska nummer från menyn eller våra svenska rätter. Priser märkta från varierar med portionsval.</p>
+
+      <div class="lunch reveal" style="margin-top:50px">
+        <div class="lhead"><span class="impact">Lunchbuffé</span><span class="price">105 kr</span></div>
+        <div class="lunch-body">
+          <div>
+            <p class="muted">Varje vardag dukar vi upp en generös och omtyckt lunchbuffé med thairätter och svensk husmanskost. Barn upp till 12 år äter för 75 kr.</p>
+            <div class="when">Måndag till fredag 11:30 till 14:30</div>
+          </div>
+          <ul>
+            <li>Flera varma thairätter och svensk husmanskost</li>
+            <li>Stor fräsch salladsbuffé</li>
+            <li>Färskt bröd och smör</li>
+            <li>Måltidsdryck eller kolsyrat vatten</li>
+            <li>Kaffe, te samt en liten kaka</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-nav" id="menu-nav"></div>
+      <div id="menu-full"></div>
+      <p class="menu-note reveal">Allergier eller preferenser? Fråga vår personal vid beställning. Priser och urval kan ändras.</p>
+    </div>
+  </div>
+  <div class="ig-block"></div>
+</section>
+
+<!-- ============ BESTALL ONLINE ============ -->
+<section class="page" data-page="order">
+  <div class="pagehead"><div class="ph-bg parallax" style="background:url('https://i.postimg.cc/4djvXrKB/feature-bar.jpg') center/cover"></div><h1>Beställ Online</h1></div>
+  <div class="band light">
+    <div class="wrap">
+      <div class="center reveal" style="margin-bottom:44px"><h2 class="sec-title">Maten hem till soffan</h2><div class="rule"></div><p class="lead">Vi samarbetar med ledande hemleveransföretag så att du får maten snabbt, varm och nylagad.</p></div>
+      <div class="order-opts">
+        <div class="oopt reveal">
+          <h3>Foodora</h3>
+          <p>Beställ hemleverans eller avhämtning supersnabbt via Foodoras app eller hemsida. Betyg 4.5 av 5.</p>
+          <a class="btn-solid btn" href="https://www.foodora.se/restaurant/p8kt/royal-thai-sportsbar" target="_blank" rel="noopener">Beställ på Foodora</a>
+        </div>
+        <div class="oopt reveal">
+          <h3>Wolt</h3>
+          <p>Få din thaimat eller svenska favoriter levererade direkt till dörren. Lansering snart.</p>
+          <button class="btn" disabled style="opacity:.5;cursor:not-allowed">Kommer snart</button>
+        </div>
+      </div>
+      <div class="pickup reveal">
+        <div class="impact">Avhämtning</div>
+        <p>Ring in din beställning på <strong>0456 226 89</strong> och hämta den direkt hos oss på <strong>Tunnbygatan 2 i Bromölla</strong>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="ig-block"></div>
+</section>
+
+<!-- ============ EVENEMANG ============ -->
+<section class="page" data-page="events">
+  <div class="pagehead"><div class="ph-bg parallax" style="background:url('https://i.postimg.cc/HxF0TfJz/shuffle.jpg') center/cover"></div><h1>Evenemang</h1></div>
+  <div class="band light">
+    <div class="wrap">
+      <div class="center reveal"><h2 class="sec-title">Alltid något på gång</h2><div class="rule"></div><p class="lead">Sport, spel och fest under ett tak. Här är vad som väntar dig hos Royal Thai SportsBar.</p></div>
+      <div class="ev-list" id="events-page"></div>
+      <div class="center reveal" style="margin-top:48px"><button class="btn-solid btn" onclick="openBook()">Boka Bord</button></div>
+    </div>
+  </div>
+  <div class="ig-block"></div>
+</section>
+
+<!-- ============ OM OSS ============ -->
+<section class="page" data-page="about">
+  <div class="pagehead"><div class="ph-bg parallax" style="background:url('https://i.postimg.cc/tT8d9L1D/hero.jpg') center/cover"></div><h1>Om Oss</h1></div>
+  <div class="band light">
+    <div class="wrap">
+      <div class="center reveal" style="margin-bottom:44px"><h2 class="sec-title">Om oss</h2><div class="rule"></div><p class="lead">Royal Thai SportsBar föddes ur visionen att skapa en genuin mötesplats i Bromölla. Vi ville förena det bästa av två världar, de kryddstarka thailändska rätterna samt den hårliga stämningen i en klassisk sportsbar.</p></div>
+      <div class="stats reveal">
+        <div class="stat"><div class="big"><span class="count" data-to="4.5" data-dec="1">0</span> av 5</div><div class="lbl">Betyg på Foodora</div></div>
+        <div class="stat"><div class="big"><span class="count" data-to="6">0</span> dagar</div><div class="lbl">I veckan öppet</div></div>
+        <div class="stat"><div class="big">02:00</div><div class="lbl">Öppet till på helgerna</div></div>
+      </div>
+      <div class="split reveal" style="margin-top:60px">
+        <div>
+          <h2 class="sec-title" style="font-size:2rem">Kärlek till god mat och trevligt sällskap</h2>
+          <p class="muted" style="margin-top:18px">Hos oss är alla välkomna. Oavsett om du vill njuta av en het thailändsk middag med familjen, ta en kall pilsner efter jobbet med kollegorna eller heja fram ditt lag i helgen. Våra duktiga kockar garanterar förstklassiga smaker med färska ingredienser samt thailändsk expertis.</p>
+          <p class="muted" style="margin-top:16px">Vi tror på utmärkt service, generös gästfrihet samt hög kvalitet i allt vi serverar. Besök oss på Tunnbygatan 2 i Bromölla för en trevlig och minnesvärd upplevelse.</p>
+        </div>
+        <div style="display:grid;gap:16px">
+          <div class="ph-img photo" style="background:url('https://i.postimg.cc/HxF0TfJz/shuffle.jpg') center/cover;aspect-ratio:16/10"></div>
+          <div class="ph-img photo" style="background:url('assets/wok.jpg') center/cover;aspect-ratio:16/10"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ig-block"></div>
+</section>
+
+</main>
+
+<!-- ============ INSTAGRAM (shared, injected) ============ -->
+<template id="ig-tpl">
+  <div class="band ig">
+    <div class="wrap">
+      <div class="center reveal"><h2 class="sec-title" style="color:#fff">Följ oss på Instagram</h2><div class="rule"></div><div class="handle">@royalthaisportsbar</div></div>
+      <div class="elfsight-app-0c0ecdf8-d422-43f9-95d7-b6524ee86697" data-elfsight-app-lazy style="margin-top:40px"></div>
+    </div>
+  </div>
+</template>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="logo"><img src="https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png" alt="Royal Thai SportsBar" /></div>
+        <p>En förstklassig sportsbar och restaurang i hjärtat av Bromölla. Vi erbjuder en unik kombination av fantastiska asiatiska smaker samt klassisk barkultur.</p>
+        <div class="socials"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">Fb</a></div>
+      </div>
+      <div>
+        <h4>Sidkarta</h4>
+        <nav style="display:grid">
+          <a data-nav="home">Hem</a><a data-nav="meny">Meny</a><a data-nav="order">Beställ Online</a><a data-nav="events">Evenemang</a><a data-nav="about">Om oss</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p>Tunnbygatan 2, Bromölla</p>
+        <p>0456 226 89</p>
+        <p>076 169 78 85</p>
+        <p>royalthaisportsbar@gmail.com</p>
+      </div>
+      <div>
+        <h4>Öppettider</h4>
+        <div id="hours-foot"></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>&copy; 2026 Royal Thai SportsBar. Alla rättigheter reserverade.</span>
+    <span><a href="#">Integritetspolicy</a> &nbsp; <a href="#">Cookies</a></span>
+  </div>
+</footer>
+
+<!-- ============ COOKIE BANNER ============ -->
+<div class="cookie" id="cookieBanner" role="dialog" aria-label="Cookie-samtycke">
+  <p>Vi använder cookies för att förbättra din upplevelse och visa innehåll från Instagram och Google Maps. <a href="#" onclick="event.preventDefault();alert('Integritetspolicy kommer snart.')">Läs mer</a></p>
+  <div class="cookie-actions">
+    <button class="btn" onclick="cookieChoice(false)">Endast nödvändiga</button>
+    <button class="btn btn-solid" onclick="cookieChoice(true)">Godkänn alla</button>
+  </div>
+</div>
+
+<!-- ============ BOOKING MODAL ============ -->
+<div class="modal-ov" id="bookModal">
+  <div class="modal">
+    <button class="close" onclick="closeBook()" aria-label="Stäng">&times;</button>
+    <h3>Boka Bord</h3>
+    <p class="sub">Fyll i dina uppgifter så hör vi av oss för att bekräfta din bokning.</p>
+    <form onsubmit="submitBook(event)" id="bookForm" novalidate>
+      <div class="field"><label>Namn</label><input required id="b-name" type="text" autocomplete="name" placeholder="För- och efternamn" /></div>
+      <div class="field row">
+        <div><label>Telefon</label><input required id="b-phone" type="tel" autocomplete="tel" placeholder="07X XXX XX XX" /></div>
+        <div><label>E-post</label><input required id="b-email" type="email" autocomplete="email" placeholder="namn@exempel.se" /></div>
+      </div>
+      <div class="field row">
+        <div><label>Antal gäster</label><input required id="b-guests" type="number" min="1" max="30" value="2" /></div>
+        <div><label>Datum</label><input required id="b-date" type="date" /></div>
+      </div>
+      <div class="field"><label>Tid</label><input required id="b-time" type="time" /></div>
+      <div class="field"><label>Önskemål (valfritt)</label><textarea id="b-note" rows="2" placeholder="Barnstol, allergier, event..."></textarea></div>
+      <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" id="b-website" tabindex="-1" autocomplete="off" /></div>
+      <button class="btn-solid btn" type="submit" id="bookSubmit">Skicka Bokningsförfrågan</button>
+      <div class="formstate" id="bookState"></div>
+    </form>
+  </div>
+</div>
+
+<script>
+/* ---------- DATA (fetchas från data/*.json - redigeras via /admin) ---------- */
+let MENU=[], HOURS=[], EVENTS=[];
+
+async function loadData(){
+  try{
+    const [m,h,e]=await Promise.all([
+      fetch('data/menu.json').then(r=>r.json()),
+      fetch('data/hours.json').then(r=>r.json()),
+      fetch('data/events.json').then(r=>r.json())
+    ]);
+    // Normalisera menu.json {categories:[{name,items:[{n,p,d}]}]} -> intern struktur {c,i}
+    MENU=(m.categories||[]).map(cat=>({c:cat.name,i:(cat.items||[]).map(it=>({n:it.n,p:it.p,d:it.d||""}))}));
+    HOURS=(h.items||[]).map(r=>({d:r.day,h:r.hours}));
+    EVENTS=e.items||[];
+    renderMenu();renderHours();renderEvents();updateOpen();observeReveals();observeCounts();
+  }catch(err){console.error('loadData failed',err);}
+}
+
+
+function renderMenu(){
+  const nav=document.getElementById('menu-nav');
+  const wrap=document.getElementById('menu-full');
+  nav.innerHTML=`<button class="chip active" data-cat="all" onclick="filterMenu('all',this)">Alla</button>`+
+    MENU.map((cat,idx)=>`<button class="chip" data-cat="${idx}" onclick="filterMenu('${idx}',this)">${cat.c}</button>`).join('');
+  wrap.innerHTML=MENU.map((cat,idx)=>`
+    <div class="menu-cat reveal in" data-cat="${idx}">
+      <h2>${cat.c}</h2><div class="cat-rule"></div>
+      <div class="menu-grid">
+        ${cat.i.map(it=>`<div class="mitem"><div class="top"><span class="name">${it.n}</span><span class="price">${it.p}</span></div>${it.d?`<div class="desc">${it.d}</div>`:''}</div>`).join('')}
+      </div>
+    </div>`).join('');
+}
+
+function filterMenu(cat,btn){
+  document.querySelectorAll('#menu-nav .chip').forEach(c=>c.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+  document.querySelectorAll('#menu-full .menu-cat').forEach(sec=>{
+    sec.style.display=(cat==='all'||sec.dataset.cat===cat)?'':'none';
+    sec.classList.add('in');
+  });
+  const nav=document.getElementById('menu-nav');
+  const y=nav.getBoundingClientRect().top+window.scrollY-64;
+  window.scrollTo({top:y,behavior:'smooth'});
+}
+
+function renderHours(){
+  const jsDay=new Date().getDay(); // 0=Sun
+  const idx=jsDay===0?6:jsDay-1;
+  const home=HOURS.map((r,k)=>`<div class="hrow ${k===idx?'today':''}"><span class="d">${r.d}</span><span>${r.h}</span></div>`).join('');
+  document.getElementById('hours-home').innerHTML=home;
+  const foot=HOURS.map((r,k)=>`<div class="fhours ${k===idx?'today':''}"><span>${r.d}</span><span>${r.h}</span></div>`).join('');
+  // NB: rendersHours ansvarar bara for HTML; layout fixar CSS ovan.
+  document.getElementById('hours-foot').innerHTML=foot;
+}
+
+/* ---------- EVENTS ---------- */
+function renderEvents(){
+  const home=document.getElementById('events-home');
+  const page=document.getElementById('events-page');
+  if(!home&&!page)return;
+  const featured=EVENTS.filter(e=>e.featured).slice(0,3);
+  const featSrc=featured.length?featured:EVENTS.slice(0,3);
+  if(home){
+    home.innerHTML=featSrc.map(e=>`
+      <div class="card reveal">
+        <div class="ph-img photo" style="background:url('${e.image||''}') center/cover"></div>
+        <h3>${e.title||''}</h3>
+        <p class="muted">${e.description||''}</p>
+      </div>`).join('');
+  }
+  if(page){
+    page.innerHTML=EVENTS.map(e=>`
+      <div class="ev reveal">
+        <div class="ph-img photo" style="background:url('${e.image||''}') center/cover"></div>
+        <div class="ev-body">
+          <span class="impact">${e.title||''}</span>
+          <span class="when">${e.when||''}</span>
+          <p>${e.description||''}</p>
+        </div>
+      </div>`).join('');
+  }
+}
+
+/* ---------- IG inject ---------- */
+function injectIG(){
+  const tpl=document.getElementById('ig-tpl');
+  document.querySelectorAll('.ig-block').forEach(b=>b.appendChild(tpl.content.cloneNode(true)));
+}
+
+/* ---------- ROUTER ---------- */
+function go(page){
+  document.querySelectorAll('.page').forEach(s=>s.classList.toggle('active',s.dataset.page===page));
+  document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active',a.dataset.nav===page&&a.closest('nav.main')));
+  document.querySelectorAll('nav.main a,nav.mobile a').forEach(a=>a.classList.toggle('active',a.dataset.nav===page));
+  window.scrollTo({top:0,behavior:'instant'in window?'instant':'auto'});
+  observeReveals();observeCounts();parallaxTick();
+}
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-nav]');
+  if(t){e.preventDefault();go(t.dataset.nav);closeMobile();}
+});
+
+/* ---------- MOBILE NAV ---------- */
+function toggleMobile(){document.getElementById('mnav').classList.toggle('open')}
+function closeMobile(){document.getElementById('mnav').classList.remove('open')}
+
+/* ---------- MODAL ---------- */
+function openBook(){document.getElementById('bookModal').classList.add('open')}
+function closeBook(){document.getElementById('bookModal').classList.remove('open')}
+document.getElementById('bookModal').addEventListener('click',e=>{if(e.target.id==='bookModal')closeBook()});
+/* Skapa gratis endpoint pa https://formspree.io (2 min), byt "FORMSPREE_ID" nedan mot ditt id (t.ex. "xzbqwerty"). Fram tills dess kor vi mailto-fallback. */
+const FORMSPREE_ID="FORMSPREE_ID";
+async function submitBook(e){
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const form=document.getElementById('bookForm');
+  if(!form.checkValidity()){form.reportValidity();return;}
+  if(v('b-website'))return; // honeypot
+  const btn=document.getElementById('bookSubmit'), state=document.getElementById('bookState');
+  const data={namn:v('b-name'),telefon:v('b-phone'),epost:v('b-email'),gaster:v('b-guests'),datum:v('b-date'),tid:v('b-time'),onskemal:v('b-note'),_subject:"Ny bokningsforfragan – Royal Thai SportsBar"};
+  btn.disabled=true;btn.textContent="Skickar...";state.className="formstate";
+  const mailtoFallback=function(msg){
+    const body=encodeURIComponent(`Bokningsforfragan Royal Thai SportsBar\n\nNamn: ${data.namn}\nTelefon: ${data.telefon}\nE-post: ${data.epost}\nAntal gaster: ${data.gaster}\nDatum: ${data.datum}\nTid: ${data.tid}\nOnskemal: ${data.onskemal||"-"}`);
+    window.location.href=`mailto:royalthaisportsbar@gmail.com?subject=Bokningsforfragan&body=${body}`;
+    state.className="formstate ok";state.textContent=msg||"Oppnar din e-post. Skicka mejlet sa hor vi av oss.";
+  };
+  if(FORMSPREE_ID==="FORMSPREE_ID"){mailtoFallback();btn.disabled=false;btn.textContent="Skicka Bokningsforfragan";return;}
+  try{
+    const r=await fetch(`https://formspree.io/f/${FORMSPREE_ID}`,{method:"POST",headers:{"Accept":"application/json","Content-Type":"application/json"},body:JSON.stringify(data)});
+    if(r.ok){state.className="formstate ok";state.textContent="Tack! Vi hor av oss for att bekrafta din bokning.";form.reset();document.getElementById('b-guests').value=2;setTimeout(closeBook,3200);}
+    else throw new Error("formspree");
+  }catch(err){mailtoFallback("Kunde inte skicka automatiskt - oppnar din e-post istallet.");}
+  finally{btn.disabled=false;btn.textContent="Skicka Bokningsforfragan";}
+}
+
+/* ---------- HEADER SCROLL + PARALLAX ---------- */
+function parallaxTick(){
+  document.querySelectorAll('.page.active .parallax').forEach(el=>{
+    const sec=el.parentElement, r=sec.getBoundingClientRect();
+    if(r.height && r.bottom>0 && r.top<window.innerHeight){
+      const prog=(r.top+r.height/2 - window.innerHeight/2)/window.innerHeight;
+      el.style.transform='translateY('+(prog*-7).toFixed(2)+'%)';
+    }
+  });
+}
+window.addEventListener('scroll',()=>{
+  document.getElementById('hdr').classList.toggle('solid',window.scrollY>60);
+  parallaxTick();
+},{passive:true});
+
+/* ---------- OPEN NOW BADGE ---------- */
+function updateOpen(){
+  const badge=document.getElementById('openBadge'); if(!badge)return;
+  const now=new Date(), day=now.getDay(), idx=day===0?6:day-1;
+  const h=HOURS[idx].h; let open=false;
+  const m=h.match(/(\d{1,2}):(\d{2})\D+(\d{1,2}):(\d{2})/);
+  if(m){ const cur=now.getHours()*60+now.getMinutes(); let o=+m[1]*60+ +m[2], c=+m[3]*60+ +m[4]; if(c<=o)c+=1440; const curA=cur+1440; open=(cur>=o&&cur<c)||(curA>=o&&curA<c); }
+  badge.className='open-badge'+(open?'':' closed');
+  badge.innerHTML='<span class="dot"></span>'+(open?'Öppet nu':'Stängt');
+}
+
+/* ---------- COUNT-UP ---------- */
+function animateCount(el){
+  const to=parseFloat(el.dataset.to), dec=+(el.dataset.dec||0), dur=1300; let s=null;
+  function step(t){ if(s===null)s=t; const p=Math.min((t-s)/dur,1), e=1-Math.pow(1-p,3); el.textContent=(to*e).toFixed(dec); if(p<1)requestAnimationFrame(step); else el.textContent=to.toFixed(dec); }
+  requestAnimationFrame(step);
+}
+let ioC;
+function observeCounts(){
+  if(ioC)ioC.disconnect();
+  ioC=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){animateCount(en.target);ioC.unobserve(en.target);}})},{threshold:.6});
+  document.querySelectorAll('.page.active .count').forEach(el=>{el.textContent='0';ioC.observe(el);});
+}
+
+/* ---------- REVEAL ---------- */
+let io;
+function observeReveals(){
+  if(io)io.disconnect();
+  io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
+  document.querySelectorAll('.page.active .reveal:not(.in)').forEach(el=>io.observe(el));
+}
+
+/* ---------- INIT ---------- */
+/* ---------- COOKIE BANNER ---------- */
+function cookieChoice(all){try{localStorage.setItem('rt_cookies',all?'all':'necessary');localStorage.setItem('rt_cookies_ts',String(Date.now()));}catch(e){}document.getElementById('cookieBanner').classList.remove('open');}
+function initCookies(){try{if(!localStorage.getItem('rt_cookies'))setTimeout(function(){document.getElementById('cookieBanner').classList.add('open');},1400);}catch(e){}}
+
+/* Data hamtas fran data/*.json — sedan kors alla render/observers */
+loadData();injectIG();observeReveals();parallaxTick();initCookies();
+</script>
+</body>
+</html>

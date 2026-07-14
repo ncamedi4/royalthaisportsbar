@@ -1,0 +1,94 @@
+# Decap CMS - konfiguration for Royal Thai SportsBar
+# https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Skapa {{collection}} "{{slug}}"'
+    update: 'Uppdatera {{collection}} "{{slug}}"'
+    delete: 'Ta bort {{collection}} "{{slug}}"'
+    uploadMedia: 'Ladda upp bild "{{path}}"'
+    deleteMedia: 'Ta bort bild "{{path}}"'
+
+# Netlify Identity - anvands for inloggning
+publish_mode: simple
+
+# Bildhantering
+media_folder: "uploads"
+public_folder: "/uploads"
+
+# Sprak i admin-panelen
+locale: 'sv'
+
+site_url: https://royalthaisportsbar.netlify.app
+display_url: https://royalthaisportsbar.netlify.app
+logo_url: https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png
+
+collections:
+
+  # ============ EVENEMANG ============
+  - name: "events"
+    label: "Evenemang"
+    label_singular: "Evenemang"
+    description: "Redigera vad som visas under 'Upplev mer' på startsidan och på evenemang-sidan. Markera 'Visa på startsidan' för de tre kort som ska synas på startsidan."
+    files:
+      - file: "data/events.json"
+        name: "events"
+        label: "Alla evenemang"
+        fields:
+          - name: items
+            label: "Evenemang"
+            label_singular: "evenemang"
+            widget: list
+            summary: "{{fields.title}} — {{fields.when}}"
+            fields:
+              - {name: title, label: "Titel", widget: string, hint: "T.ex. Blackjack"}
+              - {name: when, label: "När", widget: string, hint: "T.ex. 'Fredag och lördag 20:00 till 02:00'"}
+              - {name: description, label: "Beskrivning", widget: text}
+              - {name: image, label: "Bild", widget: image, required: false, media_library: {config: {multiple: false}}}
+              - {name: featured, label: "Visa på startsidan?", widget: boolean, default: false, hint: "Bara 3 av dessa syns på startsidan. Om fler an 3 ar markerade tas de tre forsta."}
+
+  # ============ OPPETTIDER ============
+  - name: "hours"
+    label: "Öppettider"
+    description: "Uppdatera öppettider (helger, semester osv). Skriv 'Stängt' som tid för att stänga en dag."
+    files:
+      - file: "data/hours.json"
+        name: "hours"
+        label: "Öppettider"
+        fields:
+          - name: items
+            label: "Dagar"
+            widget: list
+            allow_add: false
+            summary: "{{fields.day}} — {{fields.hours}}"
+            fields:
+              - {name: day, label: "Dag", widget: string}
+              - {name: hours, label: "Tider", widget: string, hint: "T.ex. '11:30 till 22:00' eller 'Stängt'"}
+
+  # ============ MENY ============
+  - name: "menu"
+    label: "Meny"
+    description: "Redigera menyn. Varje kategori har flera ratter. Priserna kan skrivas som t.ex. '145 kr' eller 'från 145 kr'."
+    files:
+      - file: "data/menu.json"
+        name: "menu"
+        label: "Meny"
+        fields:
+          - name: categories
+            label: "Kategorier"
+            label_singular: "Kategori"
+            widget: list
+            summary: "{{fields.name}} ({{fields.items.length}} rätter)"
+            fields:
+              - {name: name, label: "Kategorinamn", widget: string, hint: "T.ex. 'Kycklingrätter'"}
+              - name: items
+                label: "Rätter"
+                label_singular: "rätt"
+                widget: list
+                summary: "{{fields.n}} — {{fields.p}}"
+                fields:
+                  - {name: n, label: "Namn", widget: string, hint: "T.ex. '72. Pad Thai'"}
+                  - {name: p, label: "Pris", widget: string, hint: "T.ex. 'från 145 kr'"}
+                  - {name: d, label: "Beskrivning", widget: text, required: false}

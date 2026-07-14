@@ -1,0 +1,11 @@
+{
+  "items": [
+    { "day": "Måndag", "hours": "16:00 till 22:00" },
+    { "day": "Tisdag", "hours": "Stängt" },
+    { "day": "Onsdag", "hours": "11:30 till 22:00" },
+    { "day": "Torsdag", "hours": "11:30 till 02:00" },
+    { "day": "Fredag", "hours": "11:30 till 02:00" },
+    { "day": "Lördag", "hours": "12:00 till 02:00" },
+    { "day": "Söndag", "hours": "12:00 till 22:00" }
+  ]
+}

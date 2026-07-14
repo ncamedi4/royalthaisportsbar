@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Sport på storbild",
+      "when": "Alla matchdagar",
+      "description": "Premier League, SM och Champions League på storbildsskärm med förstklassigt ljud och bild.",
+      "image": "https://i.postimg.cc/4djvXrKB/feature-bar.jpg",
+      "featured": true
+    },
+    {
+      "title": "Blackjack",
+      "when": "Fredag och lördag 20:00 till 02:00",
+      "description": "Känslan av casino mitt i baren. Spela blackjack under helgens sena timmar.",
+      "image": "https://i.postimg.cc/4x1Yqcbk/Chat-GPT-Image-13-juli-2026-15-58-12-(1).png",
+      "featured": true
+    },
+    {
+      "title": "Karaoke",
+      "when": "Fredag och lördag",
+      "description": "Ta mikrofonen och sjung med vännerna. Karaoke hela kvällen under helgen.",
+      "image": "https://i.postimg.cc/NGJ85WWF/794eec74-2563-414f-8895-2f5121f749e3.png",
+      "featured": true
+    },
+    {
+      "title": "Biljard och shuffleboard",
+      "when": "Alltid tillgängligt",
+      "description": "Utmana gängen i biljard eller shuffleboard när som helst under öppettid.",
+      "image": "https://i.postimg.cc/HxF0TfJz/shuffle.jpg",
+      "featured": false
+    },
+    {
+      "title": "Fotbollsturnering",
+      "when": "Varje sommar",
+      "description": "Vår återkommande sommarturnering samlar laget och grannskapet till en dag av fotboll.",
+      "image": "https://i.postimg.cc/tT8d9L1D/hero.jpg",
+      "featured": false
+    },
+    {
+      "title": "Halloweenfest",
+      "when": "Varje år",
+      "description": "Klä ut dig och tävla om priset för bästa klädsel på vår årliga halloweenfest.",
+      "image": "https://i.postimg.cc/dV9hpCRp/Chat-GPT-Image-13-juli-2026-15-58-13-(3).png",
+      "featured": false
+    }
+  ]
+}
