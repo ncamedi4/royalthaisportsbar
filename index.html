@@ -77,6 +77,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
 <script src="https://elfsightcdn.com/platform.js" async></script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- Flatpickr - snygg datum + tid-valjare -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/themes/dark.css" />
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/l10n/sv.js"></script>
 <style>
 :root{
   --bg:#0A0A0A; --dark2:#141414; --text:#FFFFFF; --muted:rgba(255,255,255,.55);
@@ -189,10 +194,7 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 .hero-cta{animation-delay:.82s}
 @keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 /* 4. card hover */
-.card{overflow:hidden;transition:transform .55s var(--ease),box-shadow .55s var(--ease)}
-.card:hover{transform:translateY(-6px);box-shadow:0 22px 42px rgba(0,0,0,.09)}
-.card .ph-img.photo{transition:transform .9s var(--ease)}
-.card:hover .ph-img.photo{transform:scale(1.05)}
+.card{overflow:hidden}
 /* 5. parallax layers */
 .parallax{top:-12%!important;bottom:auto!important;height:124%!important;will-change:transform}
 /* 9. open-now badge */
@@ -202,7 +204,7 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 .open-badge.closed{color:rgba(255,255,255,.5)}
 .open-badge.closed .dot{background:var(--red);animation:none}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,191,106,.45)}70%{box-shadow:0 0 0 7px rgba(63,191,106,0)}100%{box-shadow:0 0 0 0 rgba(63,191,106,0)}}
-@media(prefers-reduced-motion:reduce){.hero-inner>*{animation:none;opacity:1}.card .ph-img.photo,.parallax,.card{transition:none}.card:hover{transform:none}.card:hover .ph-img.photo{transform:none}.open-badge .dot{animation:none}}
+@media(prefers-reduced-motion:reduce){.hero-inner>*{animation:none;opacity:1}.parallax{transition:none}.open-badge .dot{animation:none}}
 
 /* full-bleed banner */
 .banner{position:relative;min-height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:90px 24px;overflow:hidden;background:#0A0A0A}
@@ -324,11 +326,8 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 
 /* events */
 .ev-list{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:50px}
-.ev{border:1px solid var(--light-border);background:var(--light-2);overflow:hidden;transition:transform .4s var(--ease),border-color .4s var(--ease),box-shadow .4s var(--ease)}
-.ev:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.ev{border:1px solid var(--light-border);background:var(--light-2);overflow:hidden}
 .ev .ph-img{aspect-ratio:16/9}
-.ev .ph-img.photo{transition:transform .8s var(--ease)}
-.ev:hover .ph-img.photo{transform:scale(1.04)}
 .ev-body{padding:30px 38px 34px}
 .ev .impact{font-size:1.75rem;color:var(--light-text);display:block}
 .ev .when{display:inline-flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;letter-spacing:.14em;font-size:.9rem;color:var(--gold-ink);margin:12px 0 16px}
@@ -386,6 +385,24 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
 .formstate{margin-top:14px;padding:14px 16px;font-size:.9rem;display:none}
 .formstate.ok{display:block;background:rgba(63,191,106,.12);border:1px solid rgba(63,191,106,.35);color:#8de5a8}
 .formstate.err{display:block;background:rgba(192,57,43,.14);border:1px solid rgba(192,57,43,.4);color:#e88a80}
+
+/* Flatpickr - anpassa till Royal Thai-tema */
+.flatpickr-calendar{background:var(--dark2);border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.6);font-family:'Open Sans',sans-serif}
+.flatpickr-months{background:linear-gradient(135deg,rgba(194,162,74,.16),rgba(194,162,74,.06));border-bottom:1px solid var(--border)}
+.flatpickr-calendar.arrowTop::before{border-bottom-color:var(--border)}
+.flatpickr-calendar.arrowTop::after{border-bottom-color:var(--dark2)}
+.flatpickr-months .flatpickr-month,.flatpickr-current-month .flatpickr-monthDropdown-months,.flatpickr-current-month input.cur-year,.flatpickr-weekday{color:#fff;fill:#fff}
+.flatpickr-monthDropdown-months{background:var(--dark2)}
+.flatpickr-day{color:rgba(255,255,255,.85);border-radius:0!important}
+.flatpickr-day.today{border-color:var(--gold);color:var(--gold)}
+.flatpickr-day.selected,.flatpickr-day.selected:hover,.flatpickr-day.startRange,.flatpickr-day.endRange{background:var(--gold)!important;border-color:var(--gold)!important;color:#0A0A0A!important}
+.flatpickr-day:hover{background:rgba(194,162,74,.18)}
+.flatpickr-day.flatpickr-disabled,.flatpickr-day.flatpickr-disabled:hover,.flatpickr-day.prevMonthDay,.flatpickr-day.nextMonthDay{color:rgba(255,255,255,.25)}
+.flatpickr-months .flatpickr-prev-month:hover svg,.flatpickr-months .flatpickr-next-month:hover svg{fill:var(--gold)}
+.flatpickr-time input,.flatpickr-time .flatpickr-time-separator,.flatpickr-time .flatpickr-am-pm{color:#fff;background:var(--dark2)}
+.flatpickr-time input:hover,.flatpickr-time input:focus,.flatpickr-time .flatpickr-am-pm:hover,.flatpickr-time .flatpickr-am-pm:focus{background:rgba(194,162,74,.15)}
+.flatpickr-time .numInputWrapper span.arrowUp:after{border-bottom-color:var(--gold)}
+.flatpickr-time .numInputWrapper span.arrowDown:after{border-top-color:var(--gold)}
 .field input:focus,.field select:focus{outline:none;border-color:var(--gold)}
 .field.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .modal .btn-solid{width:100%;margin-top:10px;justify-content:center;text-align:center}
@@ -655,7 +672,7 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
   <div class="pagehead"><div class="ph-bg parallax" style="background:url('https://i.postimg.cc/tT8d9L1D/hero.jpg') center/cover"></div><h1>Om Oss</h1></div>
   <div class="band light">
     <div class="wrap">
-      <div class="center reveal" style="margin-bottom:44px"><h2 class="sec-title">Om oss</h2><div class="rule"></div><p class="lead" data-text="om_oss_page.intro">Royal Thai SportsBar föddes ur visionen att skapa en genuin mötesplats i Bromölla. Vi ville förena det bästa av två världar, de kryddstarka thailändska rätterna samt den härliga stämningen i en klassisk sportsbar.</p></div>
+      <div class="center reveal" style="margin-bottom:44px"><p class="lead" data-text="om_oss_page.intro">Royal Thai SportsBar föddes ur visionen att skapa en genuin mötesplats i Bromölla. Vi ville förena det bästa av två världar, de kryddstarka thailändska rätterna samt den härliga stämningen i en klassisk sportsbar.</p></div>
       <div class="stats reveal">
         <div class="stat"><div class="big"><span class="count" data-to="4.5" data-dec="1">0</span> av 5</div><div class="lbl">Betyg på Foodora</div></div>
         <div class="stat"><div class="big"><span class="count" data-to="6">0</span> dagar</div><div class="lbl">I veckan öppet</div></div>
@@ -746,9 +763,9 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
       </div>
       <div class="field row">
         <div><label>Antal gäster</label><input required id="b-guests" type="number" min="1" max="30" value="2" /></div>
-        <div><label>Datum</label><input required id="b-date" type="date" /></div>
+        <div><label>Datum</label><input required id="b-date" type="text" placeholder="Välj datum" autocomplete="off" /></div>
       </div>
-      <div class="field"><label>Tid</label><input required id="b-time" type="time" /></div>
+      <div class="field"><label>Tid</label><input required id="b-time" type="text" placeholder="Välj tid" autocomplete="off" /></div>
       <div class="field"><label>Önskemål (valfritt)</label><textarea id="b-note" rows="2" placeholder="Barnstol, allergier, event..."></textarea></div>
       <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" id="b-website" tabindex="-1" autocomplete="off" /></div>
       <button class="btn-solid btn" type="submit" id="bookSubmit">Skicka Bokningsförfrågan</button>
@@ -876,8 +893,33 @@ document.addEventListener('click',e=>{
 function toggleMobile(){document.getElementById('mnav').classList.toggle('open')}
 function closeMobile(){document.getElementById('mnav').classList.remove('open')}
 
-/* ---------- MODAL ---------- */
-function openBook(){document.getElementById('bookModal').classList.add('open')}
+/* ---------- MODAL + FLATPICKR ---------- */
+let _pickersInited=false;
+function initPickers(){
+  if(_pickersInited||typeof flatpickr==='undefined')return;
+  const today=new Date();
+  flatpickr('#b-date',{
+    locale:'sv',
+    dateFormat:'Y-m-d',
+    altInput:true,
+    altFormat:'j F Y',
+    minDate:'today',
+    maxDate:new Date(today.getFullYear()+1,today.getMonth(),today.getDate()),
+    disableMobile:false
+  });
+  flatpickr('#b-time',{
+    locale:'sv',
+    enableTime:true,
+    noCalendar:true,
+    dateFormat:'H:i',
+    time_24hr:true,
+    minuteIncrement:15,
+    defaultHour:18,
+    defaultMinute:0
+  });
+  _pickersInited=true;
+}
+function openBook(){document.getElementById('bookModal').classList.add('open');setTimeout(initPickers,50)}
 function closeBook(){document.getElementById('bookModal').classList.remove('open')}
 document.getElementById('bookModal').addEventListener('click',e=>{if(e.target.id==='bookModal')closeBook()});
 /* Skapa gratis endpoint pa https://formspree.io (2 min), byt "FORMSPREE_ID" nedan mot ditt id (t.ex. "xzbqwerty"). Fram tills dess kor vi mailto-fallback. */
