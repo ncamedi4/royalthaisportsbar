@@ -310,6 +310,15 @@ section.page.active{display:block;animation:pageIn .5s var(--ease)}
 
 /* info split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+/* referens-layout: split om oss + foto-collage */
+.about-split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:var(--maxw);margin:0 auto}
+.about-split .txt .rule{margin-left:0}
+.about-split .txt .lead{margin:22px 0 0;max-width:none;text-align:left}
+.about-split .about-img{aspect-ratio:4/3;background-size:cover;background-position:center;border:1px solid var(--light-border)}
+.about-split.flip .txt{order:2}
+.photo-collage{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1040px;margin:52px auto 0}
+.photo-collage div{aspect-ratio:16/11;background-size:cover;background-position:center;border:1px solid var(--light-border)}
+@media(max-width:768px){.about-split{grid-template-columns:1fr;gap:30px}.about-split.flip .txt{order:0}.photo-collage{grid-template-columns:1fr}}
 .info-cards{display:grid;gap:18px;margin-top:8px}
 .info-card{border:1px solid var(--light-border);padding:8px 32px;background:var(--light-2)}
 .info-row{display:flex;flex-direction:column;gap:6px;padding:22px 0}
@@ -515,7 +524,6 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-inner">
-      <div class="hero-eyebrow"><span class="diamond"></span>SPORTBAR I BROMÖLLA<span class="diamond"></span></div>
       <div class="logo">
         <img src="https://i.postimg.cc/zXMWnwt0/Namnlo-s-design.png" alt="Royal Thai SportsBar" />
       </div>
@@ -578,12 +586,31 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
   </div>
 
 
-  <!-- om oss teaser (light) -->
-  <div class="band tight light dark-alt" style="background:var(--light-2)">
-    <div class="wrap read center reveal">
-      <h2 class="sec-title" data-text="om_oss_teaser.title">Kärlek till god mat och trevligt sällskap</h2>
-      <p class="lead" data-text="om_oss_teaser.text">Hos oss är alla välkomna. En unik kombination av kryddstarka thailändska rätter och den härliga stämningen i en klassisk sportsbar, mitt i hjärtat av Bromölla.</p>
-      <div style="margin-top:30px"><button class="btn" data-nav="about">Las mer om oss</button></div>
+  <!-- om oss teaser (split, referens-layout) -->
+  <div class="band light">
+    <div class="wrap">
+      <div class="about-split reveal">
+        <div class="txt">
+          <h2 class="sec-title" data-text="om_oss_teaser.title">Kärlek till god mat och trevligt sällskap</h2>
+          <div class="rule"></div>
+          <p class="lead" data-text="om_oss_teaser.text">Hos oss är alla välkomna. En unik kombination av kryddstarka thailändska rätter och den härliga stämningen i en klassisk sportsbar, mitt i hjärtat av Bromölla.</p>
+          <div style="margin-top:28px"><button class="btn" data-nav="about">Läs mer om oss</button></div>
+        </div>
+        <div class="about-img" style="background-image:url('https://i.postimg.cc/4djvXrKB/feature-bar.jpg')"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- foto-collage (referens: 'in every detail') -->
+  <div class="band tight light" style="background:var(--light-2)">
+    <div class="wrap">
+      <div class="center reveal"><h2 class="sec-title">Varje kväll har sin grej</h2><div class="rule"></div><p class="lead">Från fräsande wok och kall öl till karaoke och biljard — här finns alltid något på gång.</p></div>
+      <div class="photo-collage reveal">
+        <div style="background-image:url('assets/wok.jpg')"></div>
+        <div style="background-image:url('https://i.postimg.cc/NGJ85WWF/794eec74-2563-414f-8895-2f5121f749e3.png')"></div>
+        <div style="background-image:url('https://i.postimg.cc/QtvgjRBQ/pool.jpg')"></div>
+        <div style="background-image:url('https://i.postimg.cc/HxF0TfJz/shuffle.jpg')"></div>
+      </div>
     </div>
   </div>
 
@@ -795,7 +822,7 @@ footer{background:#080808;border-top:1px solid var(--border);padding:70px 0 34px
 
 <!-- ============ COOKIE BANNER ============ -->
 <div class="cookie" id="cookieBanner" role="dialog" aria-label="Cookie-samtycke">
-  <p>Vi använder cookies för att förbättra din upplevelse och visa innehåll från Instagram och Google Maps. <a href="#" onclick="event.preventDefault();alert('Integritetspolicy kommer snart.')">Läs mer</a></p>
+  <p>Vi använder cookies för att förbättra din upplevelse och visa innehåll från Google. <a href="#" onclick="event.preventDefault();alert('Integritetspolicy kommer snart.')">Läs mer</a></p>
   <div class="cookie-actions">
     <button class="btn" onclick="cookieChoice(false)">Endast nödvändiga</button>
     <button class="btn btn-solid" onclick="cookieChoice(true)">Godkänn alla</button>
